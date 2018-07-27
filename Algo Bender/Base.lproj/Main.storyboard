@@ -660,12 +660,15 @@ May the data be with you!</string>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-XO-eR7">
-                                <rect key="frame" x="106" y="619" width="163" height="41"/>
+                                <rect key="frame" x="111.66666666666669" y="619" width="152" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Random Order">
+                                <state key="normal" title="Shuffle Order">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shuffleNumbers:" destination="CO4-hd-7Bv" eventType="touchUpInside" id="0tD-De-O5F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-9p-2ee">
                                 <rect key="frame" x="108" y="717" width="159" height="41"/>
@@ -684,7 +687,7 @@ May the data be with you!</string>
 
 To swap two numbers: tap one box, then tap another box.
 
-Random Order will keep the same numbers but randomize their locations
+Shuffle Order will keep the same numbers but randomize their locations
 
 Reset will keep the same numbers but reset them to the last set of locations from Random Order
 

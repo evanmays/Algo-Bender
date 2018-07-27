@@ -74,6 +74,12 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         selected = (nil, nil)
     }
     
+    @IBAction func shuffleNumbers(_ sender: UIButton) {
+        items.shuffle()
+        selected = (nil, nil)
+        collectionView.reloadData()
+    }
+    
     @IBAction func resetNumbers(_ sender: UIButton) {
         selected = (nil, nil)
         items = savedPositions
