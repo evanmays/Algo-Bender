@@ -17,6 +17,8 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     var selected: (Int?, Int?) = (nil, nil)
     
+    var sorted = true
+    
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -41,11 +43,14 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "address", for: indexPath) as! MyCollectionViewCell
         let i = indexPath.item
         cell.configure(value: self.items[i], position: i)
+        if (i != selected.0 && i != selected.1) {
+            cell.unselected()
+        }
+        if (self.sorted) {
+            cell.turnGreen()
+        }
         if (i == selected.0 || i == selected.1) {
             cell.selected()
-        }
-        else {
-            cell.unselected()
         }
         return cell
     }
@@ -53,14 +58,13 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (selected == (nil, nil)) {
             selected.0 = indexPath.item
+            collectionView.reloadData()
         }
         else {
             //selected is (something, nil)
             selected.1 = indexPath.item
-            
             swapSelected()
         }
-        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -71,19 +75,17 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         let temp = items[selected.0!]
         items[selected.0!] = items[selected.1!]
         items[selected.1!] = temp
-        selected = (nil, nil)
+        reloadCollection()
     }
     
     @IBAction func shuffleNumbers(_ sender: UIButton) {
         items.shuffle()
-        selected = (nil, nil)
-        collectionView.reloadData()
+        reloadCollection()
     }
     
     @IBAction func resetNumbers(_ sender: UIButton) {
-        selected = (nil, nil)
         items = savedPositions
-        collectionView.reloadData()
+        reloadCollection()
     }
     
     @IBAction func newNumbers(_ sender: UIButton) {
@@ -93,8 +95,22 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             let next = prev + Int.random(in: 1 ... 10)
             savedPositions.append(next)
         }
-        selected = (nil, nil)
         items = savedPositions
+    }
+    
+    func reloadCollection() {
+        selected = (nil, nil)
+        sorted = isSorted(arr: items)
         collectionView.reloadData()
+    }
+    func isSorted(arr: [Int]) -> Bool {
+        var curr = 0
+        for next in arr {
+            if next < curr {
+                return false
+            }
+            curr = next
+        }
+        return true
     }
 }

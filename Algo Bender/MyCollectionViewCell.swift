@@ -29,4 +29,8 @@ class MyCollectionViewCell: UICollectionViewCell {
     func unselected() {
         backgroundColor = UIColor.white
     }
+    
+    func turnGreen() {
+        backgroundColor = UIColor.green
+    }
 }
