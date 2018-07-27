@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
-                                <rect key="frame" x="16" y="142" width="343" height="555"/>
+                                <rect key="frame" x="16" y="142" width="343" height="506"/>
                                 <string key="text">Welcome Algo Amateur,
 
 Utilize this app to learn the ways of the structures and sorts.
@@ -47,13 +47,26 @@ May the data be with you!</string>
                                     <segue destination="RXz-0e-kPk" kind="presentation" id="CEd-QI-8oJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmW-AY-vSn">
+                                <rect key="frame" x="117.66666666666669" y="656" width="140" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sorting Gym">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fqV-l2-aOb" kind="presentation" id="bO7-FK-E6c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="69F-EK-xnX" secondAttribute="trailing" constant="16" id="9iW-89-Se5"/>
-                            <constraint firstItem="BYy-9X-IyF" firstAttribute="top" secondItem="69F-EK-xnX" secondAttribute="bottom" constant="8" id="KVY-GS-px7"/>
                             <constraint firstItem="69F-EK-xnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MXG-oM-BD6"/>
+                            <constraint firstItem="HmW-AY-vSn" firstAttribute="top" secondItem="69F-EK-xnX" secondAttribute="bottom" constant="8" id="U35-mo-l24"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8OW-iU-bJM" secondAttribute="trailing" constant="64" id="UP1-Xf-UVz"/>
+                            <constraint firstItem="HmW-AY-vSn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vlq-Mj-6oC"/>
+                            <constraint firstItem="BYy-9X-IyF" firstAttribute="top" secondItem="HmW-AY-vSn" secondAttribute="bottom" constant="8" id="cEw-Sc-ZyT"/>
                             <constraint firstItem="8OW-iU-bJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="kIO-kp-pTZ"/>
                             <constraint firstItem="8OW-iU-bJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="pOm-YJ-7kV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BYy-9X-IyF" secondAttribute="bottom" constant="32" id="sqr-pU-bhn"/>
@@ -549,7 +562,7 @@ May the data be with you!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNz-Nc-CN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802.4000000000001" y="31.773399014778327"/>
+            <point key="canvasLocation" x="938" y="-853"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oEj-hN-VAb">
@@ -571,10 +584,158 @@ May the data be with you!</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8O-5T-ufs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="31.773399014778327"/>
+            <point key="canvasLocation" x="1878" y="-452"/>
+        </scene>
+        <!--Sorting Practice-->
+        <scene sceneID="joF-80-bVm">
+            <objects>
+                <viewController id="CO4-hd-7Bv" customClass="SortingPracticeViewController" customModule="Algo_Bender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05s-fE-YyB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Uf-g9-vrf">
+                                <rect key="frame" x="16" y="493" width="343" height="118"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="Aen-dp-jxy"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iDk-81-NKn">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="address" id="Mb2-Wd-VHL">
+                                        <rect key="frame" x="0.0" y="18.666666666666668" width="72" height="81"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcs-hs-g65">
+                                                    <rect key="frame" x="17" y="20" width="39" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-r6-IJp">
+                                                    <rect key="frame" x="31" y="60" width="11" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="xmU-r6-IJp" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="76n-OP-Wae"/>
+                                            <constraint firstItem="rcs-hs-g65" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="WgF-uj-Q7S"/>
+                                            <constraint firstItem="rcs-hs-g65" firstAttribute="top" secondItem="Mb2-Wd-VHL" secondAttribute="top" constant="20" id="axd-Kx-pLN"/>
+                                            <constraint firstAttribute="bottom" secondItem="xmU-r6-IJp" secondAttribute="bottom" id="sA6-01-yLV"/>
+                                        </constraints>
+                                        <size key="customSize" width="72" height="81"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-XO-eR7">
+                                <rect key="frame" x="106" y="619" width="163" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Random Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-9p-2ee">
+                                <rect key="frame" x="108" y="717" width="159" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="New Numbers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
+                                <rect key="frame" x="16" y="104" width="343" height="373"/>
+                                <string key="text">Instruction on using this go here,
+
+To swap two numbers: tap one box, then tap another box.
+
+Random Order will keep the same numbers but randomize their locations
+
+Reset will keep the same numbers but reset them to the last set of locations from Random Order
+
+New Numbers will generate new numbers all in order</string>
+                                <color key="textColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDf-7r-nnh">
+                                <rect key="frame" x="155" y="668" width="65" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Uf-g9-vrf" firstAttribute="top" secondItem="ESJ-5j-mHS" secondAttribute="bottom" constant="16" id="167-wB-L68"/>
+                            <constraint firstItem="8Uf-g9-vrf" firstAttribute="leading" secondItem="Vdq-bs-8fm" secondAttribute="leading" constant="16" id="1HX-CG-TM4"/>
+                            <constraint firstItem="Vdq-bs-8fm" firstAttribute="trailing" secondItem="8Uf-g9-vrf" secondAttribute="trailing" constant="16" id="ASU-Hm-IbX"/>
+                            <constraint firstItem="rRo-9p-2ee" firstAttribute="centerX" secondItem="Vdq-bs-8fm" secondAttribute="centerX" id="Mvr-wv-FKf"/>
+                            <constraint firstItem="bmi-XO-eR7" firstAttribute="centerX" secondItem="Vdq-bs-8fm" secondAttribute="centerX" id="YZi-0n-gKx"/>
+                            <constraint firstItem="DDf-7r-nnh" firstAttribute="centerX" secondItem="Vdq-bs-8fm" secondAttribute="centerX" id="Ycn-9O-g7E"/>
+                            <constraint firstItem="DDf-7r-nnh" firstAttribute="top" secondItem="bmi-XO-eR7" secondAttribute="bottom" constant="8" id="eP3-nK-fjx"/>
+                            <constraint firstItem="Vdq-bs-8fm" firstAttribute="trailing" secondItem="ESJ-5j-mHS" secondAttribute="trailing" constant="16" id="eqB-SO-W16"/>
+                            <constraint firstItem="ESJ-5j-mHS" firstAttribute="leading" secondItem="Vdq-bs-8fm" secondAttribute="leading" constant="16" id="h7f-B4-IaW"/>
+                            <constraint firstItem="ESJ-5j-mHS" firstAttribute="top" secondItem="Vdq-bs-8fm" secondAttribute="top" constant="16" id="ieL-ls-WSq"/>
+                            <constraint firstItem="bmi-XO-eR7" firstAttribute="top" secondItem="8Uf-g9-vrf" secondAttribute="bottom" constant="8" id="jZ1-Pw-39Z"/>
+                            <constraint firstItem="Vdq-bs-8fm" firstAttribute="bottom" secondItem="rRo-9p-2ee" secondAttribute="bottom" constant="20" id="ngP-Eg-MxJ"/>
+                            <constraint firstItem="rRo-9p-2ee" firstAttribute="top" secondItem="DDf-7r-nnh" secondAttribute="bottom" constant="8" id="u7J-by-dss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vdq-bs-8fm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sorting Practice" id="zE1-7I-zMc">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="TCf-1b-7It">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="custom" customClass="DismissSegue" customModule="Algo_Bender" customModuleProvider="target" id="jOM-zw-swJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KT5-gf-Qvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="894.82758620689663"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zbg-cg-ryo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqV-l2-aOb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cib-6H-jNT">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CO4-hd-7Bv" kind="relationship" relationship="rootViewController" id="iuM-ph-E9p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhJ-Nu-kiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="341"/>
         </scene>
     </scenes>
     <resources>
         <image name="text4144" width="624" height="66"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jOM-zw-swJ"/>
+    </inferredMetricsTieBreakers>
 </document>

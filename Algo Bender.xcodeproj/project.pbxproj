@@ -13,6 +13,8 @@
 		7694ACAB210A5D830087AB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7694ACAA210A5D830087AB37 /* Assets.xcassets */; };
 		7694ACAE210A5D830087AB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7694ACAC210A5D830087AB37 /* LaunchScreen.storyboard */; };
 		7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */; };
+		7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */; };
+		7694ACBA210B89FE0087AB37 /* practice.html in Resources */ = {isa = PBXBuildFile; fileRef = 7694ACB9210B89FE0087AB37 /* practice.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7694ACAD210A5D830087AB37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7694ACAF210A5D830087AB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingPracticeViewController.swift; sourceTree = "<group>"; };
+		7694ACB9210B89FE0087AB37 /* practice.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = practice.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				7694ACAC210A5D830087AB37 /* LaunchScreen.storyboard */,
 				7694ACAF210A5D830087AB37 /* Info.plist */,
 				7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */,
+				7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */,
+				7694ACB9210B89FE0087AB37 /* practice.html */,
 			);
 			path = "Algo Bender";
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				7694ACAE210A5D830087AB37 /* LaunchScreen.storyboard in Resources */,
 				7694ACAB210A5D830087AB37 /* Assets.xcassets in Resources */,
 				7694ACA9210A5D810087AB37 /* Main.storyboard in Resources */,
+				7694ACBA210B89FE0087AB37 /* practice.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			files = (
 				7694ACA6210A5D810087AB37 /* ViewController.swift in Sources */,
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
+				7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */,
 				7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
