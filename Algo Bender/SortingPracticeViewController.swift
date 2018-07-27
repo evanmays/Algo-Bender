@@ -39,8 +39,21 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
     @IBAction func newNumbers(_ sender: UIButton) {
-        //reset items
-        //reload collection view
+        items = [Int.random(in: 1 ... 10)]
+        for i in 1...20 {
+            let prev = items[i-1]
+            let next = prev + Int.random(in: 1 ... 10)
+            items.append(next)
+        }
+        collectionView.reloadData()
     }
 }
