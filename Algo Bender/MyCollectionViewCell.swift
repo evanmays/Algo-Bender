@@ -21,4 +21,12 @@ class MyCollectionViewCell: UICollectionViewCell {
         valueWrapper.layer.borderWidth = 1.0
         valueWrapper.layer.borderColor = UIColor.black.cgColor
     }
+    
+    func selected() {
+        backgroundColor = UIColor.red
+    }
+    
+    func unselected() {
+        backgroundColor = UIColor.white
+    }
 }

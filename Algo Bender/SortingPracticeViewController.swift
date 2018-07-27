@@ -11,7 +11,11 @@ import WebKit
 
 class SortingPracticeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+    var savedPositions = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    
+    var items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    
+    var selected: (Int?, Int?) = (nil, nil)
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -35,25 +39,56 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "address", for: indexPath) as! MyCollectionViewCell
-        cell.configure(value: self.items[indexPath.item], position: indexPath.item)
+        let i = indexPath.item
+        cell.configure(value: self.items[i], position: i)
+        if (i == selected.0 || i == selected.1) {
+            cell.selected()
+        }
+        else {
+            cell.unselected()
+        }
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-        <#code#>
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (selected == (nil, nil)) {
+            selected.0 = indexPath.item
+        }
+        else {
+            //selected is (something, nil)
+            selected.1 = indexPath.item
+            
+            swapSelected()
+        }
+        collectionView.reloadData()
     }
     
-    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
-        <#code#>
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    func swapSelected() {
+        let temp = items[selected.0!]
+        items[selected.0!] = items[selected.1!]
+        items[selected.1!] = temp
+        selected = (nil, nil)
+    }
+    
+    @IBAction func resetNumbers(_ sender: UIButton) {
+        selected = (nil, nil)
+        items = savedPositions
+        collectionView.reloadData()
     }
     
     @IBAction func newNumbers(_ sender: UIButton) {
-        items = [Int.random(in: 1 ... 10)]
+        savedPositions = [Int.random(in: 1 ... 10)]
         for i in 1...20 {
-            let prev = items[i-1]
+            let prev = savedPositions[i-1]
             let next = prev + Int.random(in: 1 ... 10)
-            items.append(next)
+            savedPositions.append(next)
         }
+        selected = (nil, nil)
+        items = savedPositions
         collectionView.reloadData()
     }
 }
