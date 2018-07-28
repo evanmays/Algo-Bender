@@ -615,16 +615,16 @@ May the data be with you!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-r6-IJp">
-                                                    <rect key="frame" x="30.666666666666671" y="59" width="11" height="21"/>
+                                                    <rect key="frame" x="30.666666666666671" y="51" width="11" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIj-P9-yoW">
-                                                    <rect key="frame" x="8.6666666666666643" y="8" width="55" height="37"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="37"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcs-hs-g65">
-                                                            <rect key="frame" x="8" y="8" width="39" height="21"/>
+                                                            <rect key="frame" x="8" y="8" width="56" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -640,12 +640,14 @@ May the data be with you!</string>
                                                 </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WIj-P9-yoW" secondAttribute="trailing" id="1X5-nZ-onH"/>
                                             <constraint firstItem="xmU-r6-IJp" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="76n-OP-Wae"/>
                                             <constraint firstItem="WIj-P9-yoW" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="bbd-b6-9Hf"/>
-                                            <constraint firstItem="WIj-P9-yoW" firstAttribute="top" secondItem="Mb2-Wd-VHL" secondAttribute="top" constant="8" id="dPB-Xb-ni2"/>
-                                            <constraint firstAttribute="bottom" secondItem="xmU-r6-IJp" secondAttribute="bottom" id="sA6-01-yLV"/>
+                                            <constraint firstItem="WIj-P9-yoW" firstAttribute="top" secondItem="Mb2-Wd-VHL" secondAttribute="top" id="dPB-Xb-ni2"/>
+                                            <constraint firstItem="WIj-P9-yoW" firstAttribute="leading" secondItem="Mb2-Wd-VHL" secondAttribute="leading" id="nyk-81-yb2"/>
+                                            <constraint firstAttribute="bottom" secondItem="xmU-r6-IJp" secondAttribute="bottom" constant="8" id="sA6-01-yLV"/>
                                         </constraints>
                                         <size key="customSize" width="72" height="80"/>
                                         <connections>
@@ -692,7 +694,7 @@ Reset will keep the same numbers but reset them to the last set of locations fro
 
 New Numbers will generate new numbers all in order
 
-The practice array will turn green once array is sorted.</string>
+The array's indices will turn green once array is sorted.</string>
                                 <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

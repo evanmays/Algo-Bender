@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class MyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var value: UILabel!
     @IBOutlet weak var position: UILabel!
@@ -16,10 +17,6 @@ class MyCollectionViewCell: UICollectionViewCell {
     func configure(value: Int, position: Int) {
         self.position.text = String(position)
         self.value.text = String(value)
-        
-        valueWrapper.layer.cornerRadius = 10
-        valueWrapper.layer.borderWidth = 1.0
-        valueWrapper.layer.borderColor = UIColor.black.cgColor
     }
     
     func selected() {
@@ -27,7 +24,7 @@ class MyCollectionViewCell: UICollectionViewCell {
     }
     
     func unselected() {
-        backgroundColor = UIColor.white
+        backgroundColor = UIColor.lightGray
     }
     
     func turnGreen() {
