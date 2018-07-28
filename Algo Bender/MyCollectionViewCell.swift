@@ -31,6 +31,6 @@ class MyCollectionViewCell: UICollectionViewCell {
     }
     
     func turnGreen() {
-        backgroundColor = UIColor.green
+        backgroundColor = UIColor.init(red: 115 / 255.0, green: 250 / 255.0, blue: 121 / 255.0, alpha: 1)
     }
 }

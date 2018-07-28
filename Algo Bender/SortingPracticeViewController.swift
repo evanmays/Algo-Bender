@@ -96,6 +96,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             savedPositions.append(next)
         }
         items = savedPositions
+        reloadCollection()
     }
     
     func reloadCollection() {

@@ -595,10 +595,10 @@ May the data be with you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Uf-g9-vrf">
-                                <rect key="frame" x="16" y="511" width="343" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="16" y="531" width="343" height="80"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Aen-dp-jxy"/>
+                                    <constraint firstAttribute="height" constant="80" id="Aen-dp-jxy"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="4" id="iDk-81-NKn">
                                     <size key="itemSize" width="72" height="80"/>
@@ -608,7 +608,7 @@ May the data be with you!</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="address" id="Mb2-Wd-VHL" customClass="MyCollectionViewCell" customModule="Algo_Bender" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="10" width="72" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="72" height="80"/>
@@ -617,7 +617,7 @@ May the data be with you!</string>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-r6-IJp">
                                                     <rect key="frame" x="30.666666666666671" y="59" width="11" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIj-P9-yoW">
@@ -640,6 +640,7 @@ May the data be with you!</string>
                                                 </view>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="xmU-r6-IJp" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="76n-OP-Wae"/>
                                             <constraint firstItem="WIj-P9-yoW" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="bbd-b6-9Hf"/>
@@ -682,10 +683,8 @@ May the data be with you!</string>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
-                                <rect key="frame" x="16" y="104" width="343" height="391"/>
-                                <string key="text">Instruction on using this go here,
-
-To swap two numbers: tap one box, then tap another box.
+                                <rect key="frame" x="16" y="104" width="343" height="411"/>
+                                <string key="text">To swap two numbers: tap one box, then tap another box.
 
 Shuffle Order will keep the same numbers but randomize their locations
 
@@ -694,7 +693,7 @@ Reset will keep the same numbers but reset them to the last set of locations fro
 New Numbers will generate new numbers all in order
 
 The practice array will turn green once array is sorted.</string>
-                                <color key="textColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
