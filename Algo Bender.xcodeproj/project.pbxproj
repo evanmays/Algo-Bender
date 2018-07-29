@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760D4FC4210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */; };
+		760D4FC8210E695A00E6FD0D /* AlgorithmInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */; };
+		760D4FCA210E785100E6FD0D /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D4FC9210E785100E6FD0D /* MyTableViewCell.swift */; };
 		7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACA3210A5D810087AB37 /* AppDelegate.swift */; };
 		7694ACA6210A5D810087AB37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACA5210A5D810087AB37 /* ViewController.swift */; };
 		7694ACA9210A5D810087AB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7694ACA7210A5D810087AB37 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoHandbookTableViewController.swift; sourceTree = "<group>"; };
+		760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmInformation.swift; sourceTree = "<group>"; };
+		760D4FC9210E785100E6FD0D /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		7694ACA0210A5D810087AB37 /* Algo Bender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algo Bender.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7694ACA3210A5D810087AB37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7694ACA5210A5D810087AB37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,13 +71,16 @@
 				7694ACA3210A5D810087AB37 /* AppDelegate.swift */,
 				7694ACA5210A5D810087AB37 /* ViewController.swift */,
 				7694ACA7210A5D810087AB37 /* Main.storyboard */,
-				76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */,
 				7694ACAA210A5D830087AB37 /* Assets.xcassets */,
 				7694ACAC210A5D830087AB37 /* LaunchScreen.storyboard */,
 				7694ACAF210A5D830087AB37 /* Info.plist */,
 				7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */,
 				7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */,
 				7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */,
+				760D4FC9210E785100E6FD0D /* MyTableViewCell.swift */,
+				760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */,
+				76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */,
+				760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */,
 			);
 			path = "Algo Bender";
 			sourceTree = "<group>";
@@ -149,9 +158,12 @@
 			files = (
 				7694ACA6210A5D810087AB37 /* ViewController.swift in Sources */,
 				7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */,
+				760D4FC8210E695A00E6FD0D /* AlgorithmInformation.swift in Sources */,
 				76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */,
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
+				760D4FCA210E785100E6FD0D /* MyTableViewCell.swift in Sources */,
 				7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */,
+				760D4FC4210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift in Sources */,
 				7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
