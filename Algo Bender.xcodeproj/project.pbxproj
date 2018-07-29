@@ -15,6 +15,7 @@
 		7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */; };
 		7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */; };
 		7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */; };
+		76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
 		7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingPracticeViewController.swift; sourceTree = "<group>"; };
 		7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDetailsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				7694ACA3210A5D810087AB37 /* AppDelegate.swift */,
 				7694ACA5210A5D810087AB37 /* ViewController.swift */,
 				7694ACA7210A5D810087AB37 /* Main.storyboard */,
+				76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */,
 				7694ACAA210A5D830087AB37 /* Assets.xcassets */,
 				7694ACAC210A5D830087AB37 /* LaunchScreen.storyboard */,
 				7694ACAF210A5D830087AB37 /* Info.plist */,
@@ -146,6 +149,7 @@
 			files = (
 				7694ACA6210A5D810087AB37 /* ViewController.swift in Sources */,
 				7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */,
+				76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */,
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
 				7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */,
 				7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */,
