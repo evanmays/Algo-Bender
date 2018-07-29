@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class SortingPracticeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class SortingPracticeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate {
     
     var savedPositions = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     
@@ -23,7 +23,9 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let recognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(longPress(longPressGestureRecognizer:)))
+        recognizer.delegate=self
+        view.addGestureRecognizer(recognizer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +85,18 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         reloadCollection()
     }
     
+    func flipNumbers(n: Int) {
+        var temp: [Int] = []
+        for i in 0...n {
+            temp.insert(items[i], at: 0)
+        }
+        print(temp)
+        for i in 0...n {
+            items[i] = temp[i]
+        }
+        reloadCollection()
+    }
+    
     @IBAction func resetNumbers(_ sender: UIButton) {
         items = savedPositions
         reloadCollection()
@@ -104,6 +118,17 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         sorted = isSorted(arr: items)
         collectionView.reloadData()
     }
+    
+    
+    @objc func longPress(longPressGestureRecognizer: UILongPressGestureRecognizer) {
+        if longPressGestureRecognizer.state == .began {
+            let touchPoint = longPressGestureRecognizer.location(in: collectionView)
+            if let indexPath = collectionView.indexPathForItem(at: touchPoint) {
+                flipNumbers(n: indexPath.item)
+            }
+        }
+    }
+    
     func isSorted(arr: [Int]) -> Bool {
         var curr = 0
         for next in arr {

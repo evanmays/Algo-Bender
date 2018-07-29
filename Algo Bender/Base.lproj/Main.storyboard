@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
-                                <rect key="frame" x="16" y="142" width="343" height="506"/>
+                                <rect key="frame" x="16" y="128" width="343" height="520"/>
                                 <string key="text">Welcome Algo Amateur,
 
 Utilize this app to learn the ways of the structures and sorts.
@@ -34,7 +34,7 @@ May the data be with you!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text4144" translatesAutoresizingMaskIntoConstraints="NO" id="8OW-iU-bJM">
-                                <rect key="frame" x="64" y="60" width="247" height="66"/>
+                                <rect key="frame" x="64" y="60" width="247" height="52"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-9X-IyF">
                                 <rect key="frame" x="96.666666666666686" y="705" width="182" height="41"/>
@@ -615,8 +615,8 @@ May the data be with you!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-r6-IJp">
-                                                    <rect key="frame" x="30.666666666666671" y="51" width="11" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="32.333333333333336" y="52.333333333333336" width="7.6666666666666643" height="15.666666666666664"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -647,7 +647,7 @@ May the data be with you!</string>
                                             <constraint firstItem="WIj-P9-yoW" firstAttribute="centerX" secondItem="Mb2-Wd-VHL" secondAttribute="centerX" id="bbd-b6-9Hf"/>
                                             <constraint firstItem="WIj-P9-yoW" firstAttribute="top" secondItem="Mb2-Wd-VHL" secondAttribute="top" id="dPB-Xb-ni2"/>
                                             <constraint firstItem="WIj-P9-yoW" firstAttribute="leading" secondItem="Mb2-Wd-VHL" secondAttribute="leading" id="nyk-81-yb2"/>
-                                            <constraint firstAttribute="bottom" secondItem="xmU-r6-IJp" secondAttribute="bottom" constant="8" id="sA6-01-yLV"/>
+                                            <constraint firstAttribute="bottom" secondItem="xmU-r6-IJp" secondAttribute="bottom" constant="12" id="sA6-01-yLV"/>
                                         </constraints>
                                         <size key="customSize" width="72" height="80"/>
                                         <connections>
@@ -687,6 +687,8 @@ May the data be with you!</string>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
                                 <rect key="frame" x="16" y="104" width="343" height="411"/>
                                 <string key="text">To swap two numbers: tap one box, then tap another box.
+
+To flip the first n numbers: hold your tap on the nth number
 
 Shuffle Order will keep the same numbers but randomize their locations
 
