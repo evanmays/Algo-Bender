@@ -11,6 +11,7 @@ import WebKit
 
 class AlgorithmDetailsTableViewController: UITableViewController {
 
+    @IBOutlet var AlgoRythmics: WKWebView!
     @IBOutlet var HackerRank: WKWebView!
     @IBOutlet var GeeksForGeeks: WKWebView!
     
@@ -18,8 +19,9 @@ class AlgorithmDetailsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AlgoRythmics.load(ytCodeToRequest(code: "ywWBy6J5gz8"))
         HackerRank.load(ytCodeToRequest(code: "SLauY6PpjW4"))
-        GeeksForGeeks.load(ytCodeToRequest(code: "SLauY6PpjW4"))
+        GeeksForGeeks.load(ytCodeToRequest(code: "PgBzjlCcFvc"))
     }
     
     func ytCodeToRequest(code: String) -> URLRequest {

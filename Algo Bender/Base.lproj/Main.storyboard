@@ -453,7 +453,7 @@ May the sort be with you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O( n )" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi1-IG-nMU">
-                                                    <rect key="frame" x="297.5" y="11" width="43.5" height="22"/>
+                                                    <rect key="frame" x="242.5" y="11" width="43.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -484,7 +484,7 @@ May the sort be with you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O( 1 )" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKP-Gi-fJJ">
-                                                    <rect key="frame" x="299.5" y="11" width="41.5" height="22"/>
+                                                    <rect key="frame" x="244.5" y="11" width="41.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -515,7 +515,7 @@ May the sort be with you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O( 1 )" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwM-b5-QAm">
-                                                    <rect key="frame" x="299.5" y="11" width="41.5" height="22"/>
+                                                    <rect key="frame" x="244.5" y="11" width="41.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -546,7 +546,7 @@ May the sort be with you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O( 1 )" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ma-XX-8gg">
-                                                    <rect key="frame" x="299.5" y="11" width="41.5" height="22"/>
+                                                    <rect key="frame" x="244.5" y="11" width="41.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -577,7 +577,7 @@ May the sort be with you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O( 1 )" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTt-ia-0LS">
-                                                    <rect key="frame" x="299.5" y="11" width="41.5" height="22"/>
+                                                    <rect key="frame" x="244.5" y="11" width="41.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -608,7 +608,7 @@ May the sort be with you!</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O( 1 )" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eY9-gg-q1r">
-                                                    <rect key="frame" x="299.5" y="11" width="41.5" height="22"/>
+                                                    <rect key="frame" x="244.5" y="11" width="41.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -704,11 +704,11 @@ May the sort be with you!</string>
             <objects>
                 <viewController id="CO4-hd-7Bv" customClass="SortingPracticeViewController" customModule="Algo_Bender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="05s-fE-YyB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Uf-g9-vrf">
-                                <rect key="frame" x="16" y="531" width="343" height="80"/>
+                                <rect key="frame" x="16" y="321" width="288" height="80"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Aen-dp-jxy"/>
@@ -728,7 +728,7 @@ May the sort be with you!</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmU-r6-IJp">
-                                                    <rect key="frame" x="32.333333333333336" y="52.333333333333336" width="7.6666666666666643" height="15.666666666666664"/>
+                                                    <rect key="frame" x="32" y="52" width="8" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -776,7 +776,7 @@ May the sort be with you!</string>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-XO-eR7">
-                                <rect key="frame" x="111.66666666666669" y="619" width="152" height="41"/>
+                                <rect key="frame" x="84" y="409" width="152" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Shuffle Order">
@@ -787,7 +787,7 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-9p-2ee">
-                                <rect key="frame" x="108" y="717" width="159" height="41"/>
+                                <rect key="frame" x="80.5" y="507" width="159" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="New Numbers">
@@ -798,7 +798,7 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
-                                <rect key="frame" x="16" y="104" width="343" height="411"/>
+                                <rect key="frame" x="16" y="80" width="288" height="225"/>
                                 <string key="text">To swap two numbers: tap one box, then tap another box.
 
 To flip the first n numbers: hold your tap on the nth number
@@ -815,7 +815,7 @@ The array's indices will turn green once array is sorted.</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDf-7r-nnh">
-                                <rect key="frame" x="155" y="668" width="65" height="41"/>
+                                <rect key="frame" x="127.5" y="458" width="65" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Reset">
@@ -1061,14 +1061,76 @@ The array's indices will turn green once array is sorted.</string>
                             </tableViewSection>
                             <tableViewSection headerTitle="About the Algorithm" id="UC4-NO-Ele">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="OeP-IJ-IvR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OeP-IJ-IvR">
                                         <rect key="frame" x="0.0" y="232" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OeP-IJ-IvR" id="qcg-wg-lVm">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW9-w3-BxS">
+                                                    <rect key="frame" x="16" y="11" width="37.5" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comparison based" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bx7-LD-lWH">
+                                                    <rect key="frame" x="159.5" y="11" width="144" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Bx7-LD-lWH" secondAttribute="bottom" constant="10.67" id="K1v-mz-HQT"/>
+                                                <constraint firstItem="pW9-w3-BxS" firstAttribute="top" secondItem="qcg-wg-lVm" secondAttribute="top" constant="11" id="MVv-Mq-fHo"/>
+                                                <constraint firstAttribute="bottom" secondItem="pW9-w3-BxS" secondAttribute="bottom" constant="10.666666666666664" id="ORz-BN-dKG"/>
+                                                <constraint firstItem="pW9-w3-BxS" firstAttribute="leading" secondItem="qcg-wg-lVm" secondAttribute="leading" constant="16" id="Scx-Ls-sHI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bx7-LD-lWH" secondAttribute="trailing" constant="16.5" id="XpE-SS-1Bf"/>
+                                                <constraint firstItem="Bx7-LD-lWH" firstAttribute="top" secondItem="qcg-wg-lVm" secondAttribute="top" constant="11" id="n2P-sc-gmv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="c9r-4Z-Bja">
+                                        <rect key="frame" x="0.0" y="276" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c9r-4Z-Bja" id="nVk-Vp-i3B">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Readability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYs-ml-Q9X">
+                                                    <rect key="frame" x="16" y="11" width="84" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9q-Dy-jam">
+                                                    <rect key="frame" x="273.5" y="11" width="30" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="f9q-Dy-jam" secondAttribute="trailing" constant="16.5" id="07U-rb-V6B"/>
+                                                <constraint firstItem="f9q-Dy-jam" firstAttribute="top" secondItem="nVk-Vp-i3B" secondAttribute="top" constant="11" id="8az-Fm-3QF"/>
+                                                <constraint firstAttribute="bottom" secondItem="eYs-ml-Q9X" secondAttribute="bottom" constant="10.666666666666664" id="T1n-rU-waB"/>
+                                                <constraint firstAttribute="bottom" secondItem="f9q-Dy-jam" secondAttribute="bottom" constant="10.67" id="X6R-mD-so8"/>
+                                                <constraint firstItem="eYs-ml-Q9X" firstAttribute="top" secondItem="nVk-Vp-i3B" secondAttribute="top" constant="11" id="ZDR-w6-0eH"/>
+                                                <constraint firstItem="eYs-ml-Q9X" firstAttribute="leading" secondItem="nVk-Vp-i3B" secondAttribute="leading" constant="16" id="iQi-Xt-Z2I"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" id="L3J-Ga-Q45">
+                                        <rect key="frame" x="0.0" y="320" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L3J-Ga-Q45" id="HyU-dT-6JW">
                                             <rect key="frame" x="0.0" y="0.0" width="272" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wikipedia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW9-w3-BxS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wikipedia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne2-7m-yNo">
                                                     <rect key="frame" x="16" y="11" width="75" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1076,22 +1138,22 @@ The array's indices will turn green once array is sorted.</string>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="pW9-w3-BxS" firstAttribute="top" secondItem="qcg-wg-lVm" secondAttribute="top" constant="11" id="MVv-Mq-fHo"/>
-                                                <constraint firstAttribute="bottom" secondItem="pW9-w3-BxS" secondAttribute="bottom" constant="10.666666666666664" id="ORz-BN-dKG"/>
-                                                <constraint firstItem="pW9-w3-BxS" firstAttribute="leading" secondItem="qcg-wg-lVm" secondAttribute="leading" constant="16" id="Scx-Ls-sHI"/>
+                                                <constraint firstItem="ne2-7m-yNo" firstAttribute="leading" secondItem="HyU-dT-6JW" secondAttribute="leading" constant="16" id="7KS-I4-i4P"/>
+                                                <constraint firstItem="ne2-7m-yNo" firstAttribute="top" secondItem="HyU-dT-6JW" secondAttribute="top" constant="11" id="JVd-Ma-EvN"/>
+                                                <constraint firstAttribute="bottom" secondItem="ne2-7m-yNo" secondAttribute="bottom" constant="10.666666666666664" id="u68-Ri-DR6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="A8T-Dx-0tI">
-                                        <rect key="frame" x="0.0" y="276" width="320" height="120"/>
+                                        <rect key="frame" x="0.0" y="364" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A8T-Dx-0tI" id="jky-g9-fV5">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HackerRank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNx-df-7iM">
-                                                    <rect key="frame" x="16" y="11" width="92.5" height="98"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlgoRythmics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNx-df-7iM">
+                                                    <rect key="frame" x="16" y="11" width="106" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -1120,8 +1182,45 @@ The array's indices will turn green once array is sorted.</string>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="lQK-dZ-8hZ">
+                                        <rect key="frame" x="0.0" y="484" width="320" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lQK-dZ-8hZ" id="4Zb-Ah-RgZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HackerRank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x68-TL-eTE">
+                                                    <rect key="frame" x="16" y="11" width="92.5" height="98"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRa-7r-N67">
+                                                    <rect key="frame" x="138" y="11" width="174" height="98"/>
+                                                    <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="PRa-7r-N67" secondAttribute="height" multiplier="16:9" id="VAk-SR-Qzs"/>
+                                                    </constraints>
+                                                    <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
+                                                        <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" video="YES"/>
+                                                        <wkPreferences key="preferences"/>
+                                                    </wkWebViewConfiguration>
+                                                </wkWebView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="PRa-7r-N67" secondAttribute="bottom" constant="10.666666666666671" id="1Yq-3Z-aZW"/>
+                                                <constraint firstAttribute="bottom" secondItem="x68-TL-eTE" secondAttribute="bottom" constant="10.666666666666664" id="cOd-jK-yvu"/>
+                                                <constraint firstItem="x68-TL-eTE" firstAttribute="leading" secondItem="4Zb-Ah-RgZ" secondAttribute="leading" constant="16" id="eUf-nB-yYP"/>
+                                                <constraint firstAttribute="trailing" secondItem="PRa-7r-N67" secondAttribute="trailing" constant="8" id="hRe-mk-Dh9"/>
+                                                <constraint firstItem="PRa-7r-N67" firstAttribute="top" secondItem="4Zb-Ah-RgZ" secondAttribute="top" constant="11" id="oXT-jA-CiS"/>
+                                                <constraint firstItem="x68-TL-eTE" firstAttribute="top" secondItem="4Zb-Ah-RgZ" secondAttribute="top" constant="11" id="p6F-aR-PMh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="VbV-cm-whu">
-                                        <rect key="frame" x="0.0" y="396" width="320" height="120"/>
+                                        <rect key="frame" x="0.0" y="604" width="320" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VbV-cm-whu" id="9h0-RU-xgy">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
@@ -1168,8 +1267,9 @@ The array's indices will turn green once array is sorted.</string>
                     </tableView>
                     <navigationItem key="navigationItem" title="Quicksort" id="2NK-RY-NRa"/>
                     <connections>
+                        <outlet property="AlgoRythmics" destination="gZ7-AM-cyM" id="qJM-ts-KmJ"/>
                         <outlet property="GeeksForGeeks" destination="8nQ-Mi-dQe" id="CqQ-sP-on9"/>
-                        <outlet property="HackerRank" destination="gZ7-AM-cyM" id="iXu-Cc-ffh"/>
+                        <outlet property="HackerRank" destination="PRa-7r-N67" id="puY-jA-fRy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ku-wa-MCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
