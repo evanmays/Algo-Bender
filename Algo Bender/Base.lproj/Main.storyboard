@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
-                                <rect key="frame" x="16" y="118" width="736" height="776"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
+                                <rect key="frame" x="16" y="104" width="736" height="790"/>
                                 <string key="text">Welcome Algo Amateur,
 
 Utilize this app to learn the ways of the sorts.
@@ -35,7 +34,7 @@ May the sort be with you!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text4144" translatesAutoresizingMaskIntoConstraints="NO" id="8OW-iU-bJM">
-                                <rect key="frame" x="64" y="36" width="640" height="66"/>
+                                <rect key="frame" x="64" y="36" width="640" height="52"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYy-9X-IyF">
                                 <rect key="frame" x="293" y="951" width="182" height="41"/>
@@ -401,7 +400,7 @@ May the sort be with you!</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RXz-0e-kPk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="78r-mZ-5th">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -506,7 +505,7 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-9p-2ee">
-                                <rect key="frame" x="325.5" y="963" width="118" height="41"/>
+                                <rect key="frame" x="325" y="963" width="118" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="New Array">
@@ -516,9 +515,9 @@ May the sort be with you!</string>
                                     <action selector="newNumbers:" destination="CO4-hd-7Bv" eventType="touchUpInside" id="Imc-Tc-Xde"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
-                                <rect key="frame" x="16" y="80" width="736" height="681"/>
-                                <mutableString key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
+                                <rect key="frame" x="16" y="86" width="736" height="675"/>
+                                <string key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
 
 The bottom index section will turn green once the array is sorted.
 
@@ -532,13 +531,13 @@ Undo all swaps and flips will reset the array to the last shuffled order or last
 
 New Array will generate new numbers all in order
 
-</mutableString>
+</string>
                                 <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDf-7r-nnh">
-                                <rect key="frame" x="249.5" y="914" width="270" height="41"/>
+                                <rect key="frame" x="249" y="914" width="270" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Undo all swaps and flips">
@@ -589,7 +588,7 @@ New Array will generate new numbers all in order
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fqV-l2-aOb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cib-6H-jNT">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -1007,7 +1006,7 @@ New Array will generate new numbers all in order
         </scene>
     </scenes>
     <resources>
-        <image name="text4144" width="624" height="66"/>
+        <image name="text4144" width="499.20001220703125" height="52.799999237060547"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jOM-zw-swJ"/>
