@@ -22,10 +22,18 @@ class AlgorithmDetailsTableViewController: UITableViewController {
     @IBOutlet var worstSpace: UILabel!
     @IBOutlet var avgSpace: UILabel!
     @IBOutlet var bestSpace: UILabel!
+    
+    @IBOutlet var algorithmType: UILabel!
+    @IBOutlet var algorithmReadability: UILabel!
+    @IBOutlet var wikipediaRow: UITableViewCell!
 
     
     override func viewWillAppear(_ animated: Bool) {
-       super.viewWillAppear(animated)
+        super.viewWillAppear(animated)
+        navigationItem.title = algo!.name
+        algorithmType.text = algo!.type
+        algorithmReadability.text = algo!.readability
+        
         worstTime.text = algo!.worstTime
         avgTime.text = algo!.avgTime
         bestTime.text = algo!.bestTime
@@ -36,12 +44,32 @@ class AlgorithmDetailsTableViewController: UITableViewController {
         AlgoRythmics.load(ytCodeToRequest(code: algo!.codeAlgoRythmics))
         HackerRank.load(ytCodeToRequest(code: algo!.codeHackerRank))
         GeeksForGeeks.load(ytCodeToRequest(code: algo!.codeGeeksForGeeks))
+        
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView.cellForRow(at: indexPath)! == wikipediaRow {
+            showWikipedia()
+        }
     }
     
     func ytCodeToRequest(code: String) -> URLRequest {
         let urlAsString = "https://www.youtube-nocookie.com/embed/"+code+"?rel=0&amp;showinfo=0"
         let url = URL(string: urlAsString)
         return URLRequest(url: url!)
+    }
+    
+    func showWikipedia() {
+        
+        let myFrame = view.bounds// CGRect(x: 0, y: 0, width: <#T##Int#>, height: <#T##Int#>)
+        let webView = WKWebView(frame: myFrame)
+        
+        let url = URL(string: algo!.wikipediaURL)
+        let urlRequest = URLRequest(url: url!)
+        webView.load(urlRequest)
+        
+        view.addSubview(webView)
     }
     
     deinit {
