@@ -518,7 +518,7 @@ May the sort be with you!</string>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
                                 <rect key="frame" x="16" y="80" width="736" height="681"/>
-                                <string key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
+                                <mutableString key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
 
 The bottom index section will turn green once the array is sorted.
 
@@ -528,20 +528,20 @@ To flip the first n numbers: hold your tap on the nth number
 
 Shuffle Order will keep the same numbers but randomize their locations
 
-Autosort will set sort the array for you.
+Undo all swaps and flips will reset the array to the last shuffled order or last new array
 
 New Array will generate new numbers all in order
 
-</string>
+</mutableString>
                                 <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDf-7r-nnh">
-                                <rect key="frame" x="334.5" y="914" width="99" height="41"/>
+                                <rect key="frame" x="249.5" y="914" width="270" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Autosort">
+                                <state key="normal" title="Undo all swaps and flips">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>

@@ -76,7 +76,8 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     @IBAction func shuffleNumbers(_ sender: UIButton) {
-        items.shuffle()
+        savedPositions.shuffle()
+        items = savedPositions
         reloadCollection()
     }
     
