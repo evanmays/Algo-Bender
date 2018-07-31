@@ -16,6 +16,8 @@ class AlgorithmDetailsTableViewController: UITableViewController {
     @IBOutlet var HackerRank: WKWebView!
     @IBOutlet var GeeksForGeeks: WKWebView!
     
+    var hiddenCells: [UITableViewCell] = []
+    
     @IBOutlet var worstTime: UILabel!
     @IBOutlet var avgTime: UILabel!
     @IBOutlet var bestTime: UILabel!
@@ -41,11 +43,31 @@ class AlgorithmDetailsTableViewController: UITableViewController {
         avgSpace.text = algo!.avgSpace
         bestSpace.text = algo!.bestSpace
         
+        if (algo!.codeHackerRank == "") {
+            hiddenCells.append(HackerRank.superview!.superview! as! UITableViewCell)
+        }
+        if (algo!.codeAlgoRythmics == "") {
+            hiddenCells.append(AlgoRythmics.superview!.superview! as! UITableViewCell)
+        }
+        if (algo!.codeGeeksForGeeks == "") {
+            hiddenCells.append(GeeksForGeeks.superview!.superview! as! UITableViewCell)
+        }
+        
         AlgoRythmics.load(ytCodeToRequest(code: algo!.codeAlgoRythmics))
         HackerRank.load(ytCodeToRequest(code: algo!.codeHackerRank))
         GeeksForGeeks.load(ytCodeToRequest(code: algo!.codeGeeksForGeeks))
         
         
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        for hidecell in hiddenCells {
+            if hidecell == cell {
+                return 0
+            }
+        }
+        return super.tableView(tableView, heightForRowAt: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
