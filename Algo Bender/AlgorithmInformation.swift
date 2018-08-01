@@ -24,7 +24,7 @@ struct Algorithms {
         bestSpace: "1",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Insertion_sort",
-        videos: [("Algo Rythmics", "ROalU379l3U"), ("Geeks for Geeks", "OGzPmgsI-pQ")]
+        videos: [("Algo Rythmics", "ROalU379l3U"), ("Geeks for Geeks", "OGzPmgsI-pQ"), ("Yusuf Shakeel (no audio)", "UUswQbT6xQc")]
     )
     
     static var selectionSort = Algorithm.init(
@@ -40,7 +40,7 @@ struct Algorithms {
         bestSpace: "1",
         stable: false,
         wikipediaURL: "https://en.wikipedia.org/wiki/Selection_sort",
-        videos: [("Algo Rythmics", "Ns4TPTC8whw"), ("Geeks for Geeks", "xWBP4lzkoyM")]
+        videos: [("Algo Rythmics", "Ns4TPTC8whw"), ("Geeks for Geeks", "xWBP4lzkoyM"), ("Yusuf Shakeel (no audio)", "Aq2E47uU2ao")]
     )
     
     static var bubbleSort = Algorithm.init(
@@ -86,11 +86,11 @@ struct Algorithms {
         avgTime: "nk",
         bestTime: "nk",
         worstSpace: "n + k",
-        avgSpace: "",
-        bestSpace: "",
+        avgSpace: "n + k",
+        bestSpace: "n + k",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Radix_sort",
-        videos: [("Geeks for Geeks", "nu4gDuFabIM"), ("CS Dojo", "XiuSW_mEn7g")]
+        videos: [("Geeks for Geeks", "nu4gDuFabIM"), ("CS Dojo", "XiuSW_mEn7g"), ("Yusuf Shakeel (no audio)", "YXFI4osELGU")]
     )
     
     static var bucketSort = Algorithm.init(
@@ -101,12 +101,12 @@ struct Algorithms {
         worstTime: "n^2",
         avgTime: "n + k",
         bestTime: "n + k",
-        worstSpace: "nk",
-        avgSpace: "",
-        bestSpace: "",
+        worstSpace: "n",
+        avgSpace: "n",
+        bestSpace: "n",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Bucket_sort",
-        videos: [("Geeks for Geeks", "VuXbEb5ywrU")]
+        videos: [("Geeks for Geeks", "VuXbEb5ywrU"), ("CS Dojo", "XiuSW_mEn7g"), ("Yusuf Shakeel (no audio)", "geVyIsFpxUs")]
     )
     
     static var countingSort = Algorithm.init(
@@ -122,7 +122,7 @@ struct Algorithms {
         bestSpace: "n + k",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Counting_sort",
-        videos: [("Geeks for Geeks", "7zuGmKfUt7s"), ("CS Dojo", "OKd534EWcdk")]
+        videos: [("Geeks for Geeks", "7zuGmKfUt7s"), ("CS Dojo", "OKd534EWcdk"), ("Yusuf Shakeel (no audio)", "TTnvXY82dtM")]
     )
     //static var quickSort = Algorithm.init(id: 0, name: "Quicksort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n log n)", bestTime: "O(n log n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
