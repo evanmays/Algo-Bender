@@ -52,6 +52,7 @@ class AlgorithmDetailsTableViewController: UITableViewController {
         if (algo!.codeGeeksForGeeks == "") {
             hiddenCells.append(GeeksForGeeks.superview!.superview! as! UITableViewCell)
         }
+        hiddenCells.append(algorithmReadability.superview!.superview! as! UITableViewCell)
         
         AlgoRythmics.load(ytCodeToRequest(code: algo!.codeAlgoRythmics))
         HackerRank.load(ytCodeToRequest(code: algo!.codeHackerRank))
