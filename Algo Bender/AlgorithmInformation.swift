@@ -24,9 +24,7 @@ struct Algorithms {
         bestSpace: "1",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Insertion_sort",
-        codeAlgoRythmics: "ROalU379l3U",
-        codeHackerRank: "",
-        codeGeeksForGeeks: "OGzPmgsI-pQ"
+        videos: [("Algo Rythmics", "ROalU379l3U"), ("Geeks for Geeks", "OGzPmgsI-pQ")]
     )
     
     static var selectionSort = Algorithm.init(
@@ -42,9 +40,7 @@ struct Algorithms {
         bestSpace: "1",
         stable: false,
         wikipediaURL: "https://en.wikipedia.org/wiki/Selection_sort",
-        codeAlgoRythmics: "Ns4TPTC8whw",
-        codeHackerRank: "",
-        codeGeeksForGeeks: "xWBP4lzkoyM"
+        videos: [("Algo Rythmics", "Ns4TPTC8whw"), ("Geeks for Geeks", "xWBP4lzkoyM")]
     )
     
     static var bubbleSort = Algorithm.init(
@@ -60,9 +56,7 @@ struct Algorithms {
         bestSpace: "1",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Bubble_sort",
-        codeAlgoRythmics: "lyZQPjUT5B4",
-        codeHackerRank: "6Gv8vg0kcHc",
-        codeGeeksForGeeks: "nmhjrI-aW5o"
+        videos: [("Algo Rythmics", "lyZQPjUT5B4"), ("HackerRank","6Gv8vg0kcHc"), ("Geeks for Geeks", "nmhjrI-aW5o")]
     )
     
     /*static var pancakeSort = Algorithm.init(
@@ -96,9 +90,7 @@ struct Algorithms {
         bestSpace: "",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Radix_sort",
-        codeAlgoRythmics: "",
-        codeHackerRank: "",
-        codeGeeksForGeeks: "nu4gDuFabIM"
+        videos: [("Geeks for Geeks", "nu4gDuFabIM"), ("CS Dojo", "XiuSW_mEn7g")]
     )
     
     static var bucketSort = Algorithm.init(
@@ -114,9 +106,7 @@ struct Algorithms {
         bestSpace: "",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Bucket_sort",
-        codeAlgoRythmics: "",
-        codeHackerRank: "",
-        codeGeeksForGeeks: "VuXbEb5ywrU"
+        videos: [("Geeks for Geeks", "VuXbEb5ywrU")]
     )
     
     static var countingSort = Algorithm.init(
@@ -132,9 +122,7 @@ struct Algorithms {
         bestSpace: "n + k",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Counting_sort",
-        codeAlgoRythmics: "",
-        codeHackerRank: "",
-        codeGeeksForGeeks: "7zuGmKfUt7s"
+        videos: [("Geeks for Geeks", "7zuGmKfUt7s"), ("CS Dojo", "OKd534EWcdk")]
     )
     //static var quickSort = Algorithm.init(id: 0, name: "Quicksort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n log n)", bestTime: "O(n log n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
@@ -179,13 +167,12 @@ struct Algorithm {
     var avgSpace: String
     var bestSpace: String
     var wikipediaURL: String
-    var codeAlgoRythmics: String
-    var codeHackerRank: String
-    var codeGeeksForGeeks: String
+    
+    var videos: [(String, String)]
     
     var stable: Bool
     
-    init(id: Int, name: String, type: String, readability: String, worstTime: String, avgTime: String, bestTime: String, worstSpace: String, avgSpace: String, bestSpace: String, stable: Bool, wikipediaURL: String, codeAlgoRythmics: String, codeHackerRank: String, codeGeeksForGeeks: String) {
+    init(id: Int, name: String, type: String, readability: String, worstTime: String, avgTime: String, bestTime: String, worstSpace: String, avgSpace: String, bestSpace: String, stable: Bool, wikipediaURL: String, videos: [(String, String)]) {
         self.id = id
         self.name = name
         
@@ -199,9 +186,8 @@ struct Algorithm {
         self.avgSpace = avgSpace
         self.bestSpace = bestSpace
         self.wikipediaURL = wikipediaURL
-        self.codeAlgoRythmics = codeAlgoRythmics
-        self.codeHackerRank = codeHackerRank
-        self.codeGeeksForGeeks = codeGeeksForGeeks
+        
+        self.videos = videos
         
         self.stable = stable
     }

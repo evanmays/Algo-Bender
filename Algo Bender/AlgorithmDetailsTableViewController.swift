@@ -12,9 +12,6 @@ import WebKit
 class AlgorithmDetailsTableViewController: UITableViewController {
 
     var algo: Algorithm? = nil
-    @IBOutlet var AlgoRythmics: WKWebView!
-    @IBOutlet var HackerRank: WKWebView!
-    @IBOutlet var GeeksForGeeks: WKWebView!
     
     var hiddenCells: [UITableViewCell] = []
     
@@ -28,6 +25,10 @@ class AlgorithmDetailsTableViewController: UITableViewController {
     @IBOutlet var algorithmType: UILabel!
     @IBOutlet var algorithmReadability: UILabel!
     @IBOutlet var wikipediaRow: UITableViewCell!
+    
+    @IBOutlet var firstVideo: MyVideoTableViewCell!
+    @IBOutlet var secondVideo: MyVideoTableViewCell!
+    @IBOutlet var thirdVideo: MyVideoTableViewCell!
 
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,20 +44,30 @@ class AlgorithmDetailsTableViewController: UITableViewController {
         avgSpace.text = algo!.avgSpace
         bestSpace.text = algo!.bestSpace
         
-        if (algo!.codeHackerRank == "") {
-            hiddenCells.append(HackerRank.superview!.superview! as! UITableViewCell)
-        }
-        if (algo!.codeAlgoRythmics == "") {
-            hiddenCells.append(AlgoRythmics.superview!.superview! as! UITableViewCell)
-        }
-        if (algo!.codeGeeksForGeeks == "") {
-            hiddenCells.append(GeeksForGeeks.superview!.superview! as! UITableViewCell)
-        }
-        hiddenCells.append(algorithmReadability.superview!.superview! as! UITableViewCell)
         
-        AlgoRythmics.load(ytCodeToRequest(code: algo!.codeAlgoRythmics))
-        HackerRank.load(ytCodeToRequest(code: algo!.codeHackerRank))
-        GeeksForGeeks.load(ytCodeToRequest(code: algo!.codeGeeksForGeeks))
+        if (!algo!.videos.indices.contains(0)) {
+            hiddenCells.append(firstVideo as! UITableViewCell)
+        }
+        else {
+            firstVideo.author.text = algo!.videos[0].0
+            firstVideo.webView.load(ytCodeToRequest(code: algo!.videos[0].1))
+        }
+        if (!algo!.videos.indices.contains(1)) {
+            hiddenCells.append(secondVideo as! UITableViewCell)
+        }
+        else {
+            secondVideo.author.text = algo!.videos[1].0
+            secondVideo.webView.load(ytCodeToRequest(code: algo!.videos[1].1))
+        }
+        if (!algo!.videos.indices.contains(2)) {
+            hiddenCells.append(thirdVideo as! UITableViewCell)
+        }
+        else {
+            thirdVideo.author.text = algo!.videos[2].0
+            thirdVideo.webView.load(ytCodeToRequest(code: algo!.videos[2].1))
+        }
+        
+        hiddenCells.append(algorithmReadability.superview!.superview! as! UITableViewCell)
         
         
     }
@@ -96,9 +107,9 @@ class AlgorithmDetailsTableViewController: UITableViewController {
     }
     
     deinit {
-        AlgoRythmics = nil
-        HackerRank = nil
-        GeeksForGeeks = nil
+        firstVideo = nil
+        secondVideo = nil
+        thirdVideo = nil
         worstTime = nil
         avgTime = nil
         bestTime = nil

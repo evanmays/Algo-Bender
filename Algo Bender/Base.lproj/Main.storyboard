@@ -867,7 +867,7 @@ New Array will generate new numbers all in order
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="A8T-Dx-0tI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="A8T-Dx-0tI" customClass="MyVideoTableViewCell" customModule="Algo_Bender" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="364" width="768" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A8T-Dx-0tI" id="jky-g9-fV5">
@@ -903,8 +903,12 @@ New Array will generate new numbers all in order
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="author" destination="BNx-df-7iM" id="D35-64-umh"/>
+                                            <outlet property="webView" destination="gZ7-AM-cyM" id="bxB-mR-qTS"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="lQK-dZ-8hZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="lQK-dZ-8hZ" customClass="MyVideoTableViewCell" customModule="Algo_Bender" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="484" width="768" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lQK-dZ-8hZ" id="4Zb-Ah-RgZ">
@@ -940,8 +944,12 @@ New Array will generate new numbers all in order
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="author" destination="SB4-TD-CIb" id="27B-oN-CWB"/>
+                                            <outlet property="webView" destination="PRa-7r-N67" id="a4P-ew-kng"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="VbV-cm-whu">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="VbV-cm-whu" customClass="MyVideoTableViewCell" customModule="Algo_Bender" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="604" width="768" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VbV-cm-whu" id="9h0-RU-xgy">
@@ -978,6 +986,10 @@ New Array will generate new numbers all in order
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="author" destination="SB4-TD-CIb" id="1nf-ot-39j"/>
+                                            <outlet property="webView" destination="8nQ-Mi-dQe" id="5YM-UK-s3G"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -989,15 +1001,15 @@ New Array will generate new numbers all in order
                     </tableView>
                     <navigationItem key="navigationItem" title="Quicksort" id="2NK-RY-NRa"/>
                     <connections>
-                        <outlet property="AlgoRythmics" destination="gZ7-AM-cyM" id="qJM-ts-KmJ"/>
-                        <outlet property="GeeksForGeeks" destination="8nQ-Mi-dQe" id="CqQ-sP-on9"/>
-                        <outlet property="HackerRank" destination="PRa-7r-N67" id="puY-jA-fRy"/>
                         <outlet property="algorithmReadability" destination="f9q-Dy-jam" id="yUH-mt-CyG"/>
                         <outlet property="algorithmType" destination="Bx7-LD-lWH" id="Gd4-dc-flw"/>
                         <outlet property="avgSpace" destination="iG1-UJ-gYC" id="GZ9-i5-qgC"/>
                         <outlet property="avgTime" destination="phB-CO-Mtn" id="hdg-Wm-PK3"/>
                         <outlet property="bestSpace" destination="b0k-kL-K59" id="Tgq-5L-L7F"/>
                         <outlet property="bestTime" destination="vvi-TV-bJa" id="BSW-xv-XtW"/>
+                        <outlet property="firstVideo" destination="A8T-Dx-0tI" id="d9X-J8-Xk1"/>
+                        <outlet property="secondVideo" destination="lQK-dZ-8hZ" id="U8l-bv-5Db"/>
+                        <outlet property="thirdVideo" destination="VbV-cm-whu" id="Hwc-A2-wzU"/>
                         <outlet property="wikipediaRow" destination="L3J-Ga-Q45" id="O14-Am-162"/>
                         <outlet property="worstSpace" destination="D91-6C-ULe" id="IXD-AY-yM0"/>
                         <outlet property="worstTime" destination="jMn-Ol-Z8x" id="FhK-1s-96b"/>
@@ -1005,7 +1017,7 @@ New Array will generate new numbers all in order
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ku-wa-MCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701.5999999999999" y="-1132.0197044334975"/>
+            <point key="canvasLocation" x="1701.5625" y="-1132.03125"/>
         </scene>
     </scenes>
     <resources>
