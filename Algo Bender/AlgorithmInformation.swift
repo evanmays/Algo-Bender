@@ -11,31 +11,158 @@ import Foundation
 struct Algorithms {
     //when adding a new algorithm, don't forget to add it to algosArray
     
-    static var insertionSort = Algorithm.init(id: 0, name: "Insertion sort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n^2)", bestTime: "O(n)", worstSpace: "O(1)", avgSpace: "O(1)", bestSpace: "O(1)", wikipediaURL: "https://en.wikipedia.org/wiki/Insertion_sort", codeAlgoRythmics: "ROalU379l3U", codeHackerRank: "", codeGeeksForGeeks: "OGzPmgsI-pQ")//done
+    static var insertionSort = Algorithm.init(
+        id: 0,
+        name: "Insertion sort",
+        type: "Insertion",
+        readability: "",
+        worstTime: "n^2",
+        avgTime: "n^2",
+        bestTime: "n",
+        worstSpace: "1",
+        avgSpace: "1",
+        bestSpace: "1",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Insertion_sort",
+        codeAlgoRythmics: "ROalU379l3U",
+        codeHackerRank: "",
+        codeGeeksForGeeks: "OGzPmgsI-pQ"
+    )
     
-    static var selectionSort = Algorithm.init(id: 1, name: "Selection sort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n^2)", bestTime: "O(n^2)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
+    static var selectionSort = Algorithm.init(
+        id: 1,
+        name: "Selection sort",
+        type: "Selection",
+        readability: "",
+        worstTime: "n^2",
+        avgTime: "n^2",
+        bestTime: "n^2",
+        worstSpace: "1",
+        avgSpace: "1",
+        bestSpace: "1",
+        stable: false,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Selection_sort",
+        codeAlgoRythmics: "Ns4TPTC8whw",
+        codeHackerRank: "",
+        codeGeeksForGeeks: "xWBP4lzkoyM"
+    )
     
-    static var bubbleSort = Algorithm.init(id: 2, name: "Bubble sort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n^2)", bestTime: "O(n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "", codeGeeksForGeeks: "PgBzjlCcFvc")
+    static var bubbleSort = Algorithm.init(
+        id: 2,
+        name: "Bubble sort",
+        type: "Exchanging",
+        readability: "",
+        worstTime: "n^2",
+        avgTime: "n^2",
+        bestTime: "n",
+        worstSpace: "1",
+        avgSpace: "1",
+        bestSpace: "1",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Bubble_sort",
+        codeAlgoRythmics: "lyZQPjUT5B4",
+        codeHackerRank: "6Gv8vg0kcHc",
+        codeGeeksForGeeks: "nmhjrI-aW5o"
+    )
     
-    static var pancakeSort = Algorithm.init(id: 3, name: "Pancake sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
+    /*static var pancakeSort = Algorithm.init(
+        id: 3,
+        name: "Pancake sort",
+        type: "Reversing first n elements",
+        readability: "",
+        worstTime: "n^2",
+        avgTime: "n^2",
+        bestTime: "n^2",
+        worstSpace: "1",
+        avgSpace: "1",
+        bestSpace: "1",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Pancake_sorting",
+        codeAlgoRythmics: "",
+        codeHackerRank: "",
+        codeGeeksForGeeks: ""
+    )*/
     
-    static var heapSort = Algorithm.init(id: 4, name: "Heap sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
+    static var radixSort = Algorithm.init(
+        id: 3,
+        name: "Radix sort",
+        type: "Distribution (Non-comparison)",
+        readability: "",
+        worstTime: "nk",
+        avgTime: "nk",
+        bestTime: "nk",
+        worstSpace: "n + k",
+        avgSpace: "",
+        bestSpace: "",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Radix_sort",
+        codeAlgoRythmics: "",
+        codeHackerRank: "",
+        codeGeeksForGeeks: "nu4gDuFabIM"
+    )
     
-    static var blockSort = Algorithm.init(id: 4, name: "Block sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
+    static var bucketSort = Algorithm.init(
+        id: 4,
+        name: "Bucket sort",
+        type: "Distribution (Non-comparison)",
+        readability: "",
+        worstTime: "n^2",
+        avgTime: "n + k",
+        bestTime: "n + k",
+        worstSpace: "nk",
+        avgSpace: "",
+        bestSpace: "",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Bucket_sort",
+        codeAlgoRythmics: "",
+        codeHackerRank: "",
+        codeGeeksForGeeks: "VuXbEb5ywrU"
+    )
     
-    static var timSort = Algorithm.init(id: 4, name: "Timsort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
-    
+    static var countingSort = Algorithm.init(
+        id: 5,
+        name: "Counting sort",
+        type: "Distribution (Non-comparison)",
+        readability: "",
+        worstTime: "n + k",
+        avgTime: "n + k",
+        bestTime: "n + k",
+        worstSpace: "n + k",
+        avgSpace: "n + k",
+        bestSpace: "n + k",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Counting_sort",
+        codeAlgoRythmics: "",
+        codeHackerRank: "",
+        codeGeeksForGeeks: "7zuGmKfUt7s"
+    )
     //static var quickSort = Algorithm.init(id: 0, name: "Quicksort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n log n)", bestTime: "O(n log n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
     //static var mergeSort = Algorithm.init(id: 1, name: "Merge sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "O(n log n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
-    //static var bucketSort = Algorithm.init(id: 2, name: "Bucket sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
     //static var countingSort = Algorithm.init(id: 8, name: "Counting sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
     //static var radixSort = Algorithm.init(id: 8, name: "Counting sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
-    static var algosArray = [insertionSort, selectionSort, bubbleSort, pancakeSort, heapSort, blockSort, timSort]
+    /* static var heapSort = Algorithm.init(
+     id: 4,
+     name: "Heap sort",
+     type: "",
+     readability: "",
+     worstTime: "O(n log n)",
+     avgTime: "O(n log n)",
+     bestTime: "fes",
+     worstSpace: "fes",
+     avgSpace: "fes",
+     bestSpace: "fes",
+     wikipediaURL: "fes",
+     codeAlgoRythmics: "ywWBy6J5gz8",
+     codeHackerRank: "SLauY6PpjW4",
+     codeGeeksForGeeks: "PgBzjlCcFvc"
+     )*/
+    
+    static var algosArray = [insertionSort, selectionSort, bubbleSort, radixSort, bucketSort, countingSort]
 }
 
 struct Algorithm {
@@ -56,7 +183,9 @@ struct Algorithm {
     var codeHackerRank: String
     var codeGeeksForGeeks: String
     
-    init(id: Int, name: String, type: String, readability: String, worstTime: String, avgTime: String, bestTime: String, worstSpace: String, avgSpace: String, bestSpace: String, wikipediaURL: String, codeAlgoRythmics: String, codeHackerRank: String, codeGeeksForGeeks: String) {
+    var stable: Bool
+    
+    init(id: Int, name: String, type: String, readability: String, worstTime: String, avgTime: String, bestTime: String, worstSpace: String, avgSpace: String, bestSpace: String, stable: Bool, wikipediaURL: String, codeAlgoRythmics: String, codeHackerRank: String, codeGeeksForGeeks: String) {
         self.id = id
         self.name = name
         
@@ -73,5 +202,7 @@ struct Algorithm {
         self.codeAlgoRythmics = codeAlgoRythmics
         self.codeHackerRank = codeHackerRank
         self.codeGeeksForGeeks = codeGeeksForGeeks
+        
+        self.stable = stable
     }
 }
