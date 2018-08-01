@@ -945,7 +945,7 @@ New Array will generate new numbers all in order
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="author" destination="SB4-TD-CIb" id="27B-oN-CWB"/>
+                                            <outlet property="author" destination="x68-TL-eTE" id="TZ4-OZ-ifQ"/>
                                             <outlet property="webView" destination="PRa-7r-N67" id="a4P-ew-kng"/>
                                         </connections>
                                     </tableViewCell>
