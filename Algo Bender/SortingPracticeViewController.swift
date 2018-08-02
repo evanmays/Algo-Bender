@@ -76,7 +76,9 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     @IBAction func shuffleNumbers(_ sender: UIButton) {
-        savedPositions.shuffle()
+        //TODO: Uncomment
+        //savedPositions.shuffle()
+        savedPositions = shuffle(arr: savedPositions) //TODO: Remove
         items = savedPositions
         reloadCollection()
     }
@@ -99,10 +101,14 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     @IBAction func newNumbers(_ sender: UIButton) {
-        savedPositions = [Int.random(in: 1 ... 10)]
+        //TODO: Uncomment
+        //savedPositions = [Int.random(in: 1 ... 10)]
+        savedPositions = [Int(arc4random_uniform(10) + 1)] //TODO: Remove
         for i in 1...20 {
             let prev = savedPositions[i-1]
-            let next = prev + Int.random(in: 1 ... 10)
+            //TODO: Uncomment
+            //let next = prev + Int.random(in: 1 ... 10)
+            let next = prev + Int(arc4random_uniform(10) + 1) //TODO: Remove
             savedPositions.append(next)
         }
         items = savedPositions
@@ -134,5 +140,16 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             curr = next
         }
         return true
+    }
+    
+    func shuffle(arr: [Int]) -> [Int] {
+        var newArr = arr
+        for i in (0 ..< newArr.count).reversed() {
+            let random = Int(arc4random_uniform(UInt32(i)))
+            let temp = newArr[i]
+            newArr[i] = newArr[random]
+            newArr[random] = temp
+        }
+        return newArr
     }
 }
