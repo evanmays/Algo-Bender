@@ -30,10 +30,4 @@ class MeasuringAlgosViewController: UIViewController{
     override func viewDidLayoutSubviews() {
         textView.setContentOffset(.zero, animated: false)
     }
-    
-    func ytCodeToRequest(code: String) -> URLRequest {
-        let urlAsString = "https://www.youtube-nocookie.com/embed/"+code+"?rel=0&amp;showinfo=0"
-        let url = URL(string: urlAsString)
-        return URLRequest(url: url!)
-    }
 }

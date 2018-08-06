@@ -88,12 +88,6 @@ class AlgorithmDetailsTableViewController: UITableViewController {
         }
     }
     
-    func ytCodeToRequest(code: String) -> URLRequest {
-        let urlAsString = "https://www.youtube-nocookie.com/embed/"+code+"?rel=0&amp;showinfo=0"
-        let url = URL(string: urlAsString)
-        return URLRequest(url: url!)
-    }
-    
     func showWikipedia() {
         
         let myFrame = view.bounds// CGRect(x: 0, y: 0, width: <#T##Int#>, height: <#T##Int#>)
