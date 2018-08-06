@@ -20,8 +20,8 @@
 		76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */; };
 		76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */; };
 		76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */; };
-		76D1F79F2118AC6800506F8E /* UIViewController+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F79E2118AC6800506F8E /* UIViewController+YouTube.swift */; };
 		76D1F7A22118BD6800506F8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F7A12118BD6800506F8E /* MainViewController.swift */; };
+		76F53F322118E4DF00A57DEB /* UIViewController+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +40,8 @@
 		76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoTableViewCell.swift; sourceTree = "<group>"; };
 		76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDetailsTableViewController.swift; sourceTree = "<group>"; };
 		76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringAlgos.swift; sourceTree = "<group>"; };
-		76D1F79E2118AC6800506F8E /* UIViewController+YouTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+YouTube.swift"; path = "../New Group/UIViewController+YouTube.swift"; sourceTree = "<group>"; };
 		76D1F7A12118BD6800506F8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+YouTube.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 		7694ACA2210A5D810087AB37 /* Algo Bender */ = {
 			isa = PBXGroup;
 			children = (
-				76D1F7A02118BC3000506F8E /* Extensions */,
+				76F53F342118E51200A57DEB /* Extensions */,
 				7694ACA3210A5D810087AB37 /* AppDelegate.swift */,
 				7694ACA7210A5D810087AB37 /* Main.storyboard */,
 				7694ACAA210A5D830087AB37 /* Assets.xcassets */,
@@ -94,10 +94,10 @@
 			path = "Algo Bender";
 			sourceTree = "<group>";
 		};
-		76D1F7A02118BC3000506F8E /* Extensions */ = {
+		76F53F342118E51200A57DEB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				76D1F79E2118AC6800506F8E /* UIViewController+YouTube.swift */,
+				76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,11 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */,
+				76F53F322118E4DF00A57DEB /* UIViewController+YouTube.swift in Sources */,
 				760D4FC8210E695A00E6FD0D /* AlgorithmInformation.swift in Sources */,
 				76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */,
 				76D1F7A22118BD6800506F8E /* MainViewController.swift in Sources */,
 				76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */,
-				76D1F79F2118AC6800506F8E /* UIViewController+YouTube.swift in Sources */,
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
 				76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */,
 				760D4FCA210E785100E6FD0D /* MyTableViewCell.swift in Sources */,
