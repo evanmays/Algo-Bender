@@ -20,14 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
-                                <rect key="frame" x="16" y="118" width="736" height="776"/>
+                                <rect key="frame" x="16" y="118" width="736" height="727"/>
                                 <string key="text">Welcome Algo Amateur,
 
 Utilize this app to learn the ways of the sorts.
 
 Below, your handbook will help you understand the big O times of the sorting algorithms.
 
-Becoming a full Algo Bender will require knowing these like the times tables.
+If you don't know the terms Big O, time complexity, or space complexity, then check out the Measuring Algos section, amateur.
 
 May the sort be with you!</string>
                                 <color key="textColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,8 +48,19 @@ May the sort be with you!</string>
                                     <segue destination="RXz-0e-kPk" kind="presentation" id="CEd-QI-8oJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV9-Zx-60v">
+                                <rect key="frame" x="290" y="902" width="189" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Measuring Algos">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MNW-pm-dj8" kind="presentation" id="TeC-gO-0Sl"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmW-AY-vSn">
-                                <rect key="frame" x="314" y="902" width="140" height="41"/>
+                                <rect key="frame" x="314" y="853" width="140" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sorting Gym">
@@ -62,14 +73,16 @@ May the sort be with you!</string>
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BYy-9X-IyF" firstAttribute="top" secondItem="nV9-Zx-60v" secondAttribute="bottom" constant="8" id="7S6-dA-Xtw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="69F-EK-xnX" secondAttribute="trailing" constant="16" id="9iW-89-Se5"/>
                             <constraint firstItem="69F-EK-xnX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MXG-oM-BD6"/>
-                            <constraint firstItem="HmW-AY-vSn" firstAttribute="top" secondItem="69F-EK-xnX" secondAttribute="bottom" constant="8" id="U35-mo-l24"/>
+                            <constraint firstItem="nV9-Zx-60v" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rpy-WB-hEp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8OW-iU-bJM" secondAttribute="trailing" constant="64" id="UP1-Xf-UVz"/>
                             <constraint firstItem="HmW-AY-vSn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vlq-Mj-6oC"/>
-                            <constraint firstItem="BYy-9X-IyF" firstAttribute="top" secondItem="HmW-AY-vSn" secondAttribute="bottom" constant="8" id="cEw-Sc-ZyT"/>
+                            <constraint firstItem="HmW-AY-vSn" firstAttribute="top" secondItem="69F-EK-xnX" secondAttribute="bottom" constant="8" id="dqU-qc-bed"/>
                             <constraint firstItem="8OW-iU-bJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="kIO-kp-pTZ"/>
                             <constraint firstItem="8OW-iU-bJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="pOm-YJ-7kV"/>
+                            <constraint firstItem="nV9-Zx-60v" firstAttribute="top" secondItem="HmW-AY-vSn" secondAttribute="bottom" constant="8" id="pkd-Ut-ygc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BYy-9X-IyF" secondAttribute="bottom" constant="32" id="sqr-pU-bhn"/>
                             <constraint firstItem="69F-EK-xnX" firstAttribute="top" secondItem="8OW-iU-bJM" secondAttribute="bottom" constant="16" id="vRF-VQ-F3a"/>
                             <constraint firstItem="BYy-9X-IyF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zcR-dh-e56"/>
@@ -79,7 +92,7 @@ May the sort be with you!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="37.600000000000001" y="31.773399014778327"/>
+            <point key="canvasLocation" x="37.5" y="31.640624999999996"/>
         </scene>
         <!--Sorting Algos-->
         <scene sceneID="TcX-PA-Equ">
@@ -518,7 +531,7 @@ May the sort be with you!</string>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
                                 <rect key="frame" x="16" y="80" width="736" height="681"/>
-                                <string key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
+                                <mutableString key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
 
 The bottom index section will turn green once the array is sorted.
 
@@ -532,7 +545,7 @@ Undo all swaps and flips will reset the array to the last shuffled order or last
 
 New Array will generate new numbers all in order
 
-</string>
+</mutableString>
                                 <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -582,7 +595,7 @@ New Array will generate new numbers all in order
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KT5-gf-Qvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936.79999999999995" y="894.82758620689663"/>
+            <point key="canvasLocation" x="1702.34375" y="894.72656249999989"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zbg-cg-ryo">
@@ -604,7 +617,7 @@ New Array will generate new numbers all in order
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhJ-Nu-kiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1879" y="341"/>
+            <point key="canvasLocation" x="2644.53125" y="340.4296875"/>
         </scene>
         <!--Quicksort-->
         <scene sceneID="lEx-Jj-tSO">
@@ -1021,11 +1034,88 @@ New Array will generate new numbers all in order
             </objects>
             <point key="canvasLocation" x="1701.5625" y="-1132.03125"/>
         </scene>
+        <!--Measuring Algos-->
+        <scene sceneID="ipw-V6-Xa9">
+            <objects>
+                <viewController id="snz-BJ-beB" customClass="MeasuringAlgosViewController" customModule="Algo_Bender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rfo-b7-L6e">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKz-Cf-0Ph">
+                                <rect key="frame" x="16" y="80" width="736" height="924"/>
+                                <mutableString key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
+
+There isn't a unit like miles per hour or meters per second. The time and space are both functions. Usually the variable is n where n is the size of the input.
+
+Time and space functions (complexities) are measures of how the time and space scales with the input.
+
+So, if you see an algorithm that runs in n time complexity, then doublling the input size means the algorithm takes twice as long to run. This is linear
+
+These functions can be quadratic, linear, logirithmic, and even constant. Where a time complexity of 1 (constant) means regardless of the input size, this algorithm runs in the same amount of time.
+
+The space complexity is often also called auxillary space complexity. If I had an algorithm that copied an input into a new variable, then that space complexity is at least n because we created at least n space in memory from our copy.
+
+Not clicking?
+
+Watch these videos, then read what I wrote again.</mutableString>
+                                <color key="textColor" red="0.45098039220000002" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KKz-Cf-0Ph" firstAttribute="top" secondItem="uVM-B0-mtc" secondAttribute="top" constant="16" id="E9s-Be-VWe"/>
+                            <constraint firstItem="uVM-B0-mtc" firstAttribute="bottom" secondItem="KKz-Cf-0Ph" secondAttribute="bottom" constant="20" id="Icu-TT-JA7"/>
+                            <constraint firstItem="uVM-B0-mtc" firstAttribute="trailing" secondItem="KKz-Cf-0Ph" secondAttribute="trailing" constant="16" id="nuR-Jh-Bkq"/>
+                            <constraint firstItem="KKz-Cf-0Ph" firstAttribute="leading" secondItem="uVM-B0-mtc" secondAttribute="leading" constant="16" id="rYl-Vt-Rw1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uVM-B0-mtc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Measuring Algos" id="IEA-9S-xzp">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="NpZ-An-JeB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="custom" customClass="DismissSegue" customModule="Algo_Bender" customModuleProvider="target" id="bU5-xW-ysR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="KKz-Cf-0Ph" id="8Oj-ve-ZtP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5v6-FA-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.65625" y="966.79687499999989"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mde-gA-Gsz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MNW-pm-dj8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7DN-2V-WJo">
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="snz-BJ-beB" kind="relationship" relationship="rootViewController" id="dvW-kU-Z98"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4v-ED-Oha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.5" y="806.8359375"/>
+        </scene>
     </scenes>
     <resources>
         <image name="text4144" width="624" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jOM-zw-swJ"/>
+        <segue reference="bU5-xW-ysR"/>
     </inferredMetricsTieBreakers>
 </document>

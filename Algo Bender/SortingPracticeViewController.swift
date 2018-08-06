@@ -32,6 +32,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
 
     deinit {
         collectionView = nil
+        textView = nil
     }
     
     override func viewDidLayoutSubviews() {

@@ -19,6 +19,7 @@
 		7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */; };
 		76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */; };
 		76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */; };
+		76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoTableViewCell.swift; sourceTree = "<group>"; };
 		76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDetailsTableViewController.swift; sourceTree = "<group>"; };
+		76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringAlgos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				7694ACAF210A5D830087AB37 /* Info.plist */,
 				7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */,
 				7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */,
+				76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */,
 				7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */,
 				760D4FC9210E785100E6FD0D /* MyTableViewCell.swift */,
 				760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */,
@@ -159,6 +162,7 @@
 			files = (
 				7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */,
 				760D4FC8210E695A00E6FD0D /* AlgorithmInformation.swift in Sources */,
+				76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */,
 				76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */,
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
 				76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */,
