@@ -23,6 +23,11 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     @IBOutlet var collectionView: UICollectionView!
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textView.flashScrollIndicators()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let recognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(longPress(longPressGestureRecognizer:)))

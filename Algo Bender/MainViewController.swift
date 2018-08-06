@@ -11,6 +11,11 @@ import UIKit
 class MainViewController: UIViewController {
     @IBOutlet var textView: UITextView!
     override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         textView.setContentOffset(.zero, animated: false)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textView.flashScrollIndicators()
     }
 }

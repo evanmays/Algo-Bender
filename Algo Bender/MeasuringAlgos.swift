@@ -15,6 +15,11 @@ class MeasuringAlgosViewController: UIViewController{
     @IBOutlet var hackerRank: WKWebView!
     @IBOutlet var undefinedBehavior: WKWebView!
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textView.flashScrollIndicators()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hackerRank.load(ytCodeToRequest(code: "v4cd1O4zkGw"))
