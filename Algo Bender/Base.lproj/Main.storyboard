@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1043,7 +1044,7 @@ New Array will generate new numbers all in order
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKz-Cf-0Ph">
-                                <rect key="frame" x="16" y="80" width="736" height="607.5"/>
+                                <rect key="frame" x="16" y="80" width="736" height="604"/>
                                 <mutableString key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
 
 There isn't a unit like miles per hour or meters per second. The time and space are both functions. Usually the variable is n where n is the size of the input.
@@ -1064,7 +1065,7 @@ Watch these videos, then read what I wrote again.</mutableString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOz-PE-JhG">
-                                <rect key="frame" x="20" y="695.5" width="360" height="202.5"/>
+                                <rect key="frame" x="20" y="692" width="360" height="202.5"/>
                                 <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
                                     <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
@@ -1073,7 +1074,7 @@ Watch these videos, then read what I wrote again.</mutableString>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csT-FZ-9Eu">
-                                <rect key="frame" x="388" y="695.5" width="360" height="202.5"/>
+                                <rect key="frame" x="388" y="692" width="360" height="202.5"/>
                                 <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
                                     <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
@@ -1082,19 +1083,13 @@ Watch these videos, then read what I wrote again.</mutableString>
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HackerRank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQs-11-GcQ">
-                                <rect key="frame" x="154" y="906" width="92.5" height="98"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="uYd-oA-bDZ"/>
-                                </constraints>
+                                <rect key="frame" x="154" y="902.5" width="92.5" height="101.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undefined Behavior" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-Kx-oZ1">
-                                <rect key="frame" x="492.5" y="906" width="151" height="98"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="CvD-hT-JXc"/>
-                                </constraints>
+                                <rect key="frame" x="492.5" y="902.5" width="151" height="101.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1108,6 +1103,8 @@ Watch these videos, then read what I wrote again.</mutableString>
                             <constraint firstItem="GOz-PE-JhG" firstAttribute="width" secondItem="GOz-PE-JhG" secondAttribute="height" multiplier="16:9" id="JLD-DZ-oVp"/>
                             <constraint firstItem="csT-FZ-9Eu" firstAttribute="top" secondItem="KKz-Cf-0Ph" secondAttribute="bottom" constant="8" id="Tpp-t2-BQW"/>
                             <constraint firstItem="uVM-B0-mtc" firstAttribute="bottom" secondItem="tQs-11-GcQ" secondAttribute="bottom" constant="20" id="VZt-yD-LPX"/>
+                            <constraint firstItem="jHT-Kx-oZ1" firstAttribute="height" secondItem="csT-FZ-9Eu" secondAttribute="height" multiplier="0.5" id="XPR-gg-YKL"/>
+                            <constraint firstItem="tQs-11-GcQ" firstAttribute="height" secondItem="GOz-PE-JhG" secondAttribute="height" multiplier="0.5" id="Xxk-Z8-fyX"/>
                             <constraint firstItem="jHT-Kx-oZ1" firstAttribute="top" secondItem="csT-FZ-9Eu" secondAttribute="bottom" constant="8" id="aOm-pN-nmv"/>
                             <constraint firstItem="GOz-PE-JhG" firstAttribute="leading" secondItem="uVM-B0-mtc" secondAttribute="leading" constant="20" id="aac-Bf-QA8"/>
                             <constraint firstItem="GOz-PE-JhG" firstAttribute="top" secondItem="KKz-Cf-0Ph" secondAttribute="bottom" constant="8" id="iaD-F3-Doo"/>
