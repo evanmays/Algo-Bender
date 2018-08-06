@@ -106,7 +106,7 @@ struct Algorithms {
         bestSpace: "n",
         stable: true,
         wikipediaURL: "https://en.wikipedia.org/wiki/Bucket_sort",
-        videos: [("Geeks for Geeks", "VuXbEb5ywrU"), ("CS Dojo", "XiuSW_mEn7g"), ("Yusuf Shakeel (no audio)", "geVyIsFpxUs")]
+        videos: [("Geeks for Geeks", "VuXbEb5ywrU"), ("Mobile Computer Science Principles", "je0bBZxfmMM"), ("Yusuf Shakeel (no audio)", "geVyIsFpxUs")]
     )
     
     static var countingSort = Algorithm.init(
