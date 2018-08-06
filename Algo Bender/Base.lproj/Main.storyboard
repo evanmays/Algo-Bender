@@ -25,7 +25,7 @@
 
 Utilize this app to learn the ways of the sorts.
 
-Below, your handbook will help you understand the big O times of the sorting algorithms.
+Below, your handbook will help you understand the Big O times of the sorting algorithms.
 
 If you don't know the terms Big O, time complexity, or space complexity, then check out the Measuring Algos section, amateur.
 
@@ -534,21 +534,19 @@ May the sort be with you!</string>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
                                 <rect key="frame" x="16" y="80" width="288" height="225"/>
-                                <string key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
+                                <mutableString key="text">Each box represents an element in an array. The bottom number is the index. The top number is the value.
 
 The bottom index section will turn green once the array is sorted.
 
-To swap two numbers: tap one box, then tap another box.
+To swap two numbers: tap one element, then tap another element.
 
-To flip the first n numbers: hold your tap on the nth number
+To flip the first n numbers: hold your tap on the nth element.
 
-Shuffle Order will keep the same numbers but randomize their locations
+Shuffle Order will keep the same numbers but randomize their locations.
 
-Undo all swaps and flips will reset the array to the last shuffled order or last new array
+Undo all swaps and flips will reset the array to the last shuffled order or previous new array
 
-New Array will generate new numbers all in order
-
-</string>
+New Array will generate new numbers all in order.</mutableString>
                                 <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1047,21 +1045,21 @@ New Array will generate new numbers all in order
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKz-Cf-0Ph">
                                 <rect key="frame" x="16" y="80" width="288" height="337"/>
-                                <string key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
+                                <mutableString key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
 
-There isn't a unit like miles per hour or meters per second. The time and space are both functions. Usually the variable is n where n is the size of the input.
+There isn't a unit like miles per hour or meters per second. The time and space (complexities) are both functions of n, where n is the size of the input.
 
-Time and space functions (complexities) are measures of how the time and space scales with the input.
+Time and space functions (complexities) tell developers how an algorithm's time and space scales with the input.
 
-So, if you see an algorithm that runs in n time complexity, then doublling the input size means the algorithm takes twice as long to run. This is linear
+So, if you see an algorithm that runs in n time complexity, then doubling the input size means the algorithm takes twice as long to run. This is linear.
 
-These functions can be quadratic, linear, logirithmic, and even constant. Where a time complexity of 1 (constant) means regardless of the input size, this algorithm runs in the same amount of time.
+If an algorithm has 2^n space complexity, then the memory the algorithm consumes will grow exponentially with the size of the input.
 
-The space complexity is often also called auxillary space complexity. If I had an algorithm that copied an input into a new variable, then that space complexity is at least n because we created at least n space in memory from our copy.
+These functions can be exponential, polynomial, linear, logarithmic, and even constant. Where a time complexity of 1 (constant) means regardless of the input size, this algorithm runs in the same amount of time.
 
 Not clicking?
 
-Watch these videos, then read what I wrote again.</string>
+Watch these videos, then read what I wrote again.</mutableString>
                                 <color key="textColor" red="0.45098039220000002" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1165,6 +1163,6 @@ Watch these videos, then read what I wrote again.</string>
         <image name="text4144" width="624" height="66"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bU5-xW-ysR"/>
+        <segue reference="jOM-zw-swJ"/>
     </inferredMetricsTieBreakers>
 </document>
