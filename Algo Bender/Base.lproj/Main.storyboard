@@ -49,7 +49,7 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV9-Zx-60v">
-                                <rect key="frame" x="290" y="902" width="189" height="41"/>
+                                <rect key="frame" x="289.5" y="902" width="189" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Measuring Algos">
@@ -937,7 +937,7 @@ New Array will generate new numbers all in order
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRa-7r-N67">
-                                                    <rect key="frame" x="586" y="11" width="174" height="98"/>
+                                                    <rect key="frame" x="586.5" y="11" width="173.5" height="98"/>
                                                     <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="PRa-7r-N67" secondAttribute="height" multiplier="16:9" id="VAk-SR-Qzs"/>
@@ -972,13 +972,13 @@ New Array will generate new numbers all in order
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeeksForGeeks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB4-TD-CIb">
-                                                    <rect key="frame" x="16" y="11" width="554" height="98"/>
+                                                    <rect key="frame" x="16" y="11" width="554.5" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nQ-Mi-dQe">
-                                                    <rect key="frame" x="586" y="11" width="174" height="98"/>
+                                                    <rect key="frame" x="586.5" y="11" width="173.5" height="98"/>
                                                     <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="8nQ-Mi-dQe" secondAttribute="height" multiplier="16:9" id="5sp-VP-tnB"/>
@@ -1043,7 +1043,7 @@ New Array will generate new numbers all in order
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKz-Cf-0Ph">
-                                <rect key="frame" x="16" y="80" width="736" height="924"/>
+                                <rect key="frame" x="16" y="80" width="736" height="607.5"/>
                                 <mutableString key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
 
 There isn't a unit like miles per hour or meters per second. The time and space are both functions. Usually the variable is n where n is the size of the input.
@@ -1063,13 +1063,61 @@ Watch these videos, then read what I wrote again.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOz-PE-JhG">
+                                <rect key="frame" x="20" y="695.5" width="360" height="202.5"/>
+                                <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csT-FZ-9Eu">
+                                <rect key="frame" x="388" y="695.5" width="360" height="202.5"/>
+                                <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsPictureInPictureMediaPlayback="NO">
+                                    <dataDetectorTypes key="dataDetectorTypes" none="YES"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HackerRank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQs-11-GcQ">
+                                <rect key="frame" x="154" y="906" width="92.5" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="uYd-oA-bDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undefined Behavior" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHT-Kx-oZ1">
+                                <rect key="frame" x="492.5" y="906" width="151" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="CvD-hT-JXc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="csT-FZ-9Eu" firstAttribute="leading" secondItem="GOz-PE-JhG" secondAttribute="trailing" constant="8" id="Dab-2s-eUM"/>
                             <constraint firstItem="KKz-Cf-0Ph" firstAttribute="top" secondItem="uVM-B0-mtc" secondAttribute="top" constant="16" id="E9s-Be-VWe"/>
-                            <constraint firstItem="uVM-B0-mtc" firstAttribute="bottom" secondItem="KKz-Cf-0Ph" secondAttribute="bottom" constant="20" id="Icu-TT-JA7"/>
+                            <constraint firstItem="uVM-B0-mtc" firstAttribute="bottom" secondItem="jHT-Kx-oZ1" secondAttribute="bottom" constant="20" id="JC6-hv-KCv"/>
+                            <constraint firstItem="GOz-PE-JhG" firstAttribute="width" secondItem="GOz-PE-JhG" secondAttribute="height" multiplier="16:9" id="JLD-DZ-oVp"/>
+                            <constraint firstItem="csT-FZ-9Eu" firstAttribute="top" secondItem="KKz-Cf-0Ph" secondAttribute="bottom" constant="8" id="Tpp-t2-BQW"/>
+                            <constraint firstItem="uVM-B0-mtc" firstAttribute="bottom" secondItem="tQs-11-GcQ" secondAttribute="bottom" constant="20" id="VZt-yD-LPX"/>
+                            <constraint firstItem="jHT-Kx-oZ1" firstAttribute="top" secondItem="csT-FZ-9Eu" secondAttribute="bottom" constant="8" id="aOm-pN-nmv"/>
+                            <constraint firstItem="GOz-PE-JhG" firstAttribute="leading" secondItem="uVM-B0-mtc" secondAttribute="leading" constant="20" id="aac-Bf-QA8"/>
+                            <constraint firstItem="GOz-PE-JhG" firstAttribute="top" secondItem="KKz-Cf-0Ph" secondAttribute="bottom" constant="8" id="iaD-F3-Doo"/>
                             <constraint firstItem="uVM-B0-mtc" firstAttribute="trailing" secondItem="KKz-Cf-0Ph" secondAttribute="trailing" constant="16" id="nuR-Jh-Bkq"/>
+                            <constraint firstItem="tQs-11-GcQ" firstAttribute="centerX" secondItem="GOz-PE-JhG" secondAttribute="centerX" id="qpi-DK-Rdj"/>
                             <constraint firstItem="KKz-Cf-0Ph" firstAttribute="leading" secondItem="uVM-B0-mtc" secondAttribute="leading" constant="16" id="rYl-Vt-Rw1"/>
+                            <constraint firstItem="tQs-11-GcQ" firstAttribute="top" secondItem="GOz-PE-JhG" secondAttribute="bottom" constant="8" id="t0m-QO-cZO"/>
+                            <constraint firstItem="csT-FZ-9Eu" firstAttribute="width" secondItem="csT-FZ-9Eu" secondAttribute="height" multiplier="16:9" id="upQ-cB-rAC"/>
+                            <constraint firstItem="jHT-Kx-oZ1" firstAttribute="centerX" secondItem="csT-FZ-9Eu" secondAttribute="centerX" id="voU-uH-3nu"/>
+                            <constraint firstItem="uVM-B0-mtc" firstAttribute="trailing" secondItem="csT-FZ-9Eu" secondAttribute="trailing" constant="20" id="wV2-dn-w4e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uVM-B0-mtc"/>
                     </view>
@@ -1082,7 +1130,9 @@ Watch these videos, then read what I wrote again.</mutableString>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="hackerRank" destination="GOz-PE-JhG" id="tf7-fl-wzg"/>
                         <outlet property="textView" destination="KKz-Cf-0Ph" id="8Oj-ve-ZtP"/>
+                        <outlet property="undefinedBehavior" destination="csT-FZ-9Eu" id="dEZ-KX-r6Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5v6-FA-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>

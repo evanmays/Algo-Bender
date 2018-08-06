@@ -12,12 +12,28 @@ import WebKit
 class MeasuringAlgosViewController: UIViewController{
     
     @IBOutlet var textView: UITextView!
+    @IBOutlet var hackerRank: WKWebView!
+    @IBOutlet var undefinedBehavior: WKWebView!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hackerRank.load(ytCodeToRequest(code: "v4cd1O4zkGw"))
+        undefinedBehavior.load(ytCodeToRequest(code: "MyeV2_tGqvw"))
+    }
+    
     deinit {
         textView = nil
+        hackerRank = nil
+        undefinedBehavior = nil
     }
     
     override func viewDidLayoutSubviews() {
         textView.setContentOffset(.zero, animated: false)
+    }
+    
+    func ytCodeToRequest(code: String) -> URLRequest {
+        let urlAsString = "https://www.youtube-nocookie.com/embed/"+code+"?rel=0&amp;showinfo=0"
+        let url = URL(string: urlAsString)
+        return URLRequest(url: url!)
     }
 }
