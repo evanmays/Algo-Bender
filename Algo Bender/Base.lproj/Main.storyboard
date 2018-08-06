@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -20,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69F-EK-xnX">
                                 <rect key="frame" x="16" y="118" width="288" height="271"/>
                                 <string key="text">Welcome Algo Amateur,
 
@@ -102,7 +101,7 @@ May the sort be with you!</string>
         <scene sceneID="TcX-PA-Equ">
             <objects>
                 <tableViewController id="NH9-TI-bUT" customClass="AlgoHandbookTableViewController" customModule="Algo_Bender" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nln-8z-c8b">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nln-8z-c8b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -443,7 +442,7 @@ May the sort be with you!</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Uf-g9-vrf">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Uf-g9-vrf">
                                 <rect key="frame" x="16" y="321" width="288" height="80"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -533,9 +532,9 @@ May the sort be with you!</string>
                                     <action selector="newNumbers:" destination="CO4-hd-7Bv" eventType="touchUpInside" id="Imc-Tc-Xde"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-5j-mHS">
                                 <rect key="frame" x="16" y="80" width="288" height="225"/>
-                                <mutableString key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
+                                <string key="text">Each box represents an element in an array. The index is on the bottom. The white section on the top is the element's value.
 
 The bottom index section will turn green once the array is sorted.
 
@@ -549,7 +548,7 @@ Undo all swaps and flips will reset the array to the last shuffled order or last
 
 New Array will generate new numbers all in order
 
-</mutableString>
+</string>
                                 <color key="textColor" red="0.45098039215686275" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -627,7 +626,7 @@ New Array will generate new numbers all in order
         <scene sceneID="lEx-Jj-tSO">
             <objects>
                 <tableViewController id="ajW-Bl-QUU" customClass="AlgorithmDetailsTableViewController" customModule="Algo_Bender" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BpM-UR-FSz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BpM-UR-FSz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1046,9 +1045,9 @@ New Array will generate new numbers all in order
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKz-Cf-0Ph">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKz-Cf-0Ph">
                                 <rect key="frame" x="16" y="80" width="288" height="337"/>
-                                <mutableString key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
+                                <string key="text">Algorithms are measured in time and space. Time refers to how long the algorithm takes where space refers to how much memory an algorithm uses.
 
 There isn't a unit like miles per hour or meters per second. The time and space are both functions. Usually the variable is n where n is the size of the input.
 
@@ -1062,7 +1061,7 @@ The space complexity is often also called auxillary space complexity. If I had a
 
 Not clicking?
 
-Watch these videos, then read what I wrote again.</mutableString>
+Watch these videos, then read what I wrote again.</string>
                                 <color key="textColor" red="0.45098039220000002" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
