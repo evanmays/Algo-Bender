@@ -46,21 +46,21 @@ class AlgorithmDetailsTableViewController: UITableViewController {
         
         
         if (!algo!.videos.indices.contains(0)) {
-            hiddenCells.append(firstVideo as! UITableViewCell)
+            hiddenCells.append(firstVideo)
         }
         else {
             firstVideo.author.text = algo!.videos[0].0
             firstVideo.webView.load(ytCodeToRequest(code: algo!.videos[0].1))
         }
         if (!algo!.videos.indices.contains(1)) {
-            hiddenCells.append(secondVideo as! UITableViewCell)
+            hiddenCells.append(secondVideo)
         }
         else {
             secondVideo.author.text = algo!.videos[1].0
             secondVideo.webView.load(ytCodeToRequest(code: algo!.videos[1].1))
         }
         if (!algo!.videos.indices.contains(2)) {
-            hiddenCells.append(thirdVideo as! UITableViewCell)
+            hiddenCells.append(thirdVideo)
         }
         else {
             thirdVideo.author.text = algo!.videos[2].0
