@@ -126,8 +126,21 @@ struct Algorithms {
     )
     //static var quickSort = Algorithm.init(id: 0, name: "Quicksort", type: "", readability: "", worstTime: "O(n^2)", avgTime: "O(n log n)", bestTime: "O(n log n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
-    //static var mergeSort = Algorithm.init(id: 1, name: "Merge sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "O(n log n)", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
-    
+    static var mergeSort = Algorithm.init(
+        id: 6,
+        name: "Merge sort",
+        type: "Merging",
+        readability: "",
+        worstTime: "n log n",
+        avgTime: "n log n",
+        bestTime: "n log n",
+        worstSpace: "n",
+        avgSpace: "n",
+        bestSpace: "n",
+        stable: true,
+        wikipediaURL: "https://en.wikipedia.org/wiki/Merge_sort",
+        videos: [("Algo Rythmics", "XaqR3G_NVoo"), ("HackerRank","KF2j-9iSf4Q"), ("Geeks for Geeks", "JSceec-wEyw")]
+    )
     
     //static var countingSort = Algorithm.init(id: 8, name: "Counting sort", type: "", readability: "", worstTime: "O(n log n)", avgTime: "O(n log n)", bestTime: "fes", worstSpace: "fes", avgSpace: "fes", bestSpace: "fes", wikipediaURL: "fes", codeAlgoRythmics: "ywWBy6J5gz8", codeHackerRank: "SLauY6PpjW4", codeGeeksForGeeks: "PgBzjlCcFvc")
     
@@ -150,7 +163,7 @@ struct Algorithms {
      codeGeeksForGeeks: "PgBzjlCcFvc"
      )*/
     
-    static var algosArray = [insertionSort, selectionSort, bubbleSort, radixSort, bucketSort, countingSort]
+    static var algosArray = [insertionSort, selectionSort, bubbleSort, radixSort, bucketSort, countingSort, mergeSort]
 }
 
 struct Algorithm {
