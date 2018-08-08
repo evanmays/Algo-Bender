@@ -31,6 +31,10 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     @IBOutlet var numberOfTempArrays: UILabel!
     
+    var swapEnabled: Bool = true
+    var flipEnabled: Bool = false
+    var copyEnabled: Bool = false
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         //textView.flashScrollIndicators()
@@ -73,14 +77,27 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (selected == (nil, nil)) {
-            selected.0 = indexPath.item
-            collectionView.reloadData()
+        if (swapEnabled) {
+            if (selected == (nil, nil)) {
+                selected.0 = indexPath.item
+                collectionView.reloadData()
+            }
+            else {
+                //selected is (something, nil)
+                selected.1 = indexPath.item
+                swapSelected()
+            }
         }
-        else {
-            //selected is (something, nil)
-            selected.1 = indexPath.item
-            swapSelected()
+        else if (copyEnabled) {
+            if (selected == (nil, nil)) {
+                selected.0 = indexPath.item
+                collectionView.reloadData()
+            }
+            else {
+                //selected is (something, nil)
+                selected.1 = indexPath.item
+                copySelected()
+            }
         }
     }
     
@@ -88,6 +105,11 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         let temp = items[selected.0!]
         items[selected.0!] = items[selected.1!]
         items[selected.1!] = temp
+        reloadCollection()
+    }
+    
+    func copySelected() {
+        items[selected.1!] = items[selected.0!]
         reloadCollection()
     }
     
@@ -142,7 +164,9 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         if longPressGestureRecognizer.state == .began {
             let touchPoint = longPressGestureRecognizer.location(in: collectionView)
             if let indexPath = collectionView.indexPathForItem(at: touchPoint) {
-                flipNumbers(n: indexPath.item)
+                if (flipEnabled) {
+                    flipNumbers(n: indexPath.item)
+                }
             }
         }
     }
@@ -167,6 +191,26 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             newArr[random] = temp
         }
         return newArr
+    }
+    
+    @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            swapEnabled = true
+            flipEnabled = false
+            copyEnabled = false
+        case 1:
+            swapEnabled = false
+            flipEnabled = true
+            copyEnabled = false
+        case 2:
+            swapEnabled = false
+            flipEnabled = false
+            copyEnabled = true
+        default:
+            break
+        }
+        reloadCollection()
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {

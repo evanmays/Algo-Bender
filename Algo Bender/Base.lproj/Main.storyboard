@@ -324,6 +324,9 @@ May the sort be with you!</string>
                                     <segment title="Flip"/>
                                     <segment title="Copy"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="CO4-hd-7Bv" eventType="valueChanged" id="0Lk-8q-xSt"/>
+                                </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVF-a8-NaT">
                                 <rect key="frame" x="88.5" y="384" width="143" height="66"/>
