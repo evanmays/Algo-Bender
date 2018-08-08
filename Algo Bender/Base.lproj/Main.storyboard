@@ -483,6 +483,7 @@ Tap one element, then tap another element.</string>
                     <connections>
                         <outlet property="SortConstraintBottom" destination="ngP-Eg-MxJ" id="hg1-4a-WrZ"/>
                         <outlet property="collectionView" destination="8Uf-g9-vrf" id="fxT-8r-cA8"/>
+                        <outlet property="controlInstructions" destination="OVF-a8-NaT" id="oNE-1U-rca"/>
                         <outlet property="newSortedArrayBtn" destination="rRo-9p-2ee" id="xWE-Kq-DXp"/>
                         <outlet property="numberOfTempArrays" destination="1oU-tm-mAL" id="tdH-mv-fCZ"/>
                         <outlet property="shuffleAndNewSortConstraint" destination="vea-oo-dA9" id="HPr-HA-mPi"/>
@@ -878,13 +879,13 @@ Tap one element, then tap another element.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeeksForGeeks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB4-TD-CIb">
-                                                    <rect key="frame" x="16" y="11" width="121.5" height="98"/>
+                                                    <rect key="frame" x="16" y="11" width="112.5" height="98"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nQ-Mi-dQe">
-                                                    <rect key="frame" x="842.5" y="11" width="173.5" height="98"/>
+                                                    <rect key="frame" x="138.5" y="11" width="173.5" height="98"/>
                                                     <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="8nQ-Mi-dQe" secondAttribute="height" multiplier="16:9" id="5sp-VP-tnB"/>

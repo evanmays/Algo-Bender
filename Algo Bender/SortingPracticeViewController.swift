@@ -31,6 +31,8 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     @IBOutlet var numberOfTempArrays: UILabel!
     
+    @IBOutlet var controlInstructions: UITextView!
+    
     var swapEnabled: Bool = true
     var flipEnabled: Bool = false
     var copyEnabled: Bool = false
@@ -196,14 +198,17 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
+            controlInstructions.text = "To swap two numbers:\nTap one element, then tap another element."
             swapEnabled = true
             flipEnabled = false
             copyEnabled = false
         case 1:
+            controlInstructions.text = "To flip the first z Ints:\nHold your tap on the zth element."
             swapEnabled = false
             flipEnabled = true
             copyEnabled = false
         case 2:
+            controlInstructions.text = "To copy a number:\nTap src element, then tap dst position."
             swapEnabled = false
             flipEnabled = false
             copyEnabled = true
