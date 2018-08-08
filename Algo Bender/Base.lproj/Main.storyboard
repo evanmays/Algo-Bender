@@ -476,10 +476,13 @@ Tap one element, then tap another element.</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="SortConstraintBottom" destination="ngP-Eg-MxJ" id="hg1-4a-WrZ"/>
                         <outlet property="collectionView" destination="8Uf-g9-vrf" id="fxT-8r-cA8"/>
                         <outlet property="newSortedArrayBtn" destination="rRo-9p-2ee" id="xWE-Kq-DXp"/>
                         <outlet property="numberOfTempArrays" destination="1oU-tm-mAL" id="tdH-mv-fCZ"/>
+                        <outlet property="shuffleAndNewSortConstraint" destination="vea-oo-dA9" id="HPr-HA-mPi"/>
                         <outlet property="shuffleBtn" destination="bmi-XO-eR7" id="9Mm-nY-NLE"/>
+                        <outlet property="shuffleConstraintTop" destination="MeE-Q1-wGA" id="yoz-C9-FUl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KT5-gf-Qvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
