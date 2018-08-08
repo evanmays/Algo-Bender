@@ -25,7 +25,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        textView.flashScrollIndicators()
+        //textView.flashScrollIndicators()
     }
     
     override func viewDidLoad() {
@@ -41,7 +41,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     override func viewDidLayoutSubviews() {
-        textView.setContentOffset(.zero, animated: false)
+        //textView.setContentOffset(.zero, animated: false)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

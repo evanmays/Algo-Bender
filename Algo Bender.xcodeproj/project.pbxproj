@@ -21,6 +21,7 @@
 		76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */; };
 		76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */; };
 		76D1F7A22118BD6800506F8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F7A12118BD6800506F8E /* MainViewController.swift */; };
+		76D8B061211B4AA200F390C8 /* SortingPracticeInstructions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D8B060211B4AA200F390C8 /* SortingPracticeInstructions.xib */; };
 		76F53F322118E4DF00A57DEB /* UIViewController+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDetailsTableViewController.swift; sourceTree = "<group>"; };
 		76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringAlgos.swift; sourceTree = "<group>"; };
 		76D1F7A12118BD6800506F8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		76D8B060211B4AA200F390C8 /* SortingPracticeInstructions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortingPracticeInstructions.xib; sourceTree = "<group>"; };
 		76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+YouTube.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */,
 				760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */,
 				76D1F7A12118BD6800506F8E /* MainViewController.swift */,
+				76D8B060211B4AA200F390C8 /* SortingPracticeInstructions.xib */,
 			);
 			path = "Algo Bender";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				7694ACAE210A5D830087AB37 /* LaunchScreen.storyboard in Resources */,
 				7694ACAB210A5D830087AB37 /* Assets.xcassets in Resources */,
+				76D8B061211B4AA200F390C8 /* SortingPracticeInstructions.xib in Resources */,
 				7694ACA9210A5D810087AB37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
