@@ -21,7 +21,12 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     var sorted = true
     
+    @IBOutlet var shuffleBtn: UIButton!
+    @IBOutlet var newSortedArrayBtn: UIButton!
+    
     @IBOutlet var collectionView: UICollectionView!
+    
+    @IBOutlet var numberOfTempArrays: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -74,10 +79,6 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             selected.1 = indexPath.item
             swapSelected()
         }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        
     }
     
     func swapSelected() {
@@ -163,5 +164,23 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             newArr[random] = temp
         }
         return newArr
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper) {
+        numberOfTempArrays.text = Int(sender.value).description + " Temp Arrays"
+        if (Int(sender.value) > 0) {
+            //shrink Shuffle Order and New Sorted Array buttons
+            UIView.animate(withDuration: 1.0, animations: {() -> Void in
+                self.shuffleBtn.titleLabel?.font = self.shuffleBtn.titleLabel?.font.withSize(10.0)
+                self.newSortedArrayBtn.titleLabel?.font = self.newSortedArrayBtn.titleLabel?.font.withSize(10.0)
+            })
+        }
+        else {
+            //grow Shuffle Order and New Sorted Array buttons
+            UIView.animate(withDuration: 1.0, animations: {() -> Void in
+                self.shuffleBtn.titleLabel?.font = self.shuffleBtn.titleLabel?.font.withSize(24.0)
+                self.newSortedArrayBtn.titleLabel?.font = self.newSortedArrayBtn.titleLabel?.font.withSize(24.0)
+            })
+        }
     }
 }

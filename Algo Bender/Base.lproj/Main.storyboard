@@ -196,7 +196,7 @@ May the sort be with you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8Uf-g9-vrf">
-                                <rect key="frame" x="16" y="294" width="288" height="80"/>
+                                <rect key="frame" x="16" y="260" width="288" height="80"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Aen-dp-jxy"/>
@@ -264,8 +264,8 @@ May the sort be with you!</string>
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-XO-eR7">
-                                <rect key="frame" x="125" y="492" width="70" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <rect key="frame" x="84" y="458" width="152" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Shuffle Order">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -275,8 +275,8 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-9p-2ee">
-                                <rect key="frame" x="114.5" y="524" width="91" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <rect key="frame" x="61" y="507" width="198" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="New Sorted Array">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -286,7 +286,7 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FzV-mu-I2C">
-                                <rect key="frame" x="88.5" y="382" width="143" height="29"/>
+                                <rect key="frame" x="88.5" y="348" width="143" height="29"/>
                                 <segments>
                                     <segment title="Swap"/>
                                     <segment title="Flip"/>
@@ -294,7 +294,7 @@ May the sort be with you!</string>
                                 </segments>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVF-a8-NaT">
-                                <rect key="frame" x="88.5" y="418" width="143" height="66"/>
+                                <rect key="frame" x="88.5" y="384" width="143" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="hWQ-vB-as6"/>
                                 </constraints>
@@ -312,6 +312,9 @@ Tap one element, then tap another element.</string>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="brH-nD-UL1">
                                 <rect key="frame" x="202" y="73" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="CO4-hd-7Bv" eventType="valueChanged" id="BPl-Ct-gh7"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Array Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-im-Dko">
                                 <rect key="frame" x="24" y="110.5" width="92" height="14.5"/>
@@ -326,13 +329,13 @@ Tap one element, then tap another element.</string>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input array of size n" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E3-qU-iSz">
-                                <rect key="frame" x="16" y="262" width="288" height="24"/>
+                                <rect key="frame" x="16" y="228" width="288" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="82" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-Zu-WC1">
-                                <rect key="frame" x="0.0" y="141" width="320" height="113"/>
+                                <rect key="frame" x="0.0" y="141" width="320" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6SO-NA-rXy">
@@ -474,6 +477,9 @@ Tap one element, then tap another element.</string>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="8Uf-g9-vrf" id="fxT-8r-cA8"/>
+                        <outlet property="newSortedArrayBtn" destination="rRo-9p-2ee" id="xWE-Kq-DXp"/>
+                        <outlet property="numberOfTempArrays" destination="1oU-tm-mAL" id="tdH-mv-fCZ"/>
+                        <outlet property="shuffleBtn" destination="bmi-XO-eR7" id="9Mm-nY-NLE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KT5-gf-Qvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
