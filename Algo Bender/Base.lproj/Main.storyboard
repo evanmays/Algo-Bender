@@ -335,18 +335,20 @@ May the sort be with you!</string>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FzV-mu-I2C">
-                                <rect key="frame" x="88.5" y="348" width="143" height="29"/>
+                                <rect key="frame" x="40.5" y="348" width="239" height="29"/>
                                 <segments>
                                     <segment title="Swap"/>
                                     <segment title="Flip"/>
                                     <segment title="Copy"/>
+                                    <segment title="++"/>
+                                    <segment title="--"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentValueChanged:" destination="CO4-hd-7Bv" eventType="valueChanged" id="0Lk-8q-xSt"/>
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVF-a8-NaT">
-                                <rect key="frame" x="88.5" y="384" width="143" height="66"/>
+                                <rect key="frame" x="40.5" y="384" width="239" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="hWQ-vB-as6"/>
                                 </constraints>
