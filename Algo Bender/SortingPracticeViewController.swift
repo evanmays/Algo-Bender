@@ -62,6 +62,8 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     var swapEnabled: Bool = true
     var flipEnabled: Bool = false
     var copyEnabled: Bool = false
+    var plusplusEnabled: Bool = false
+    var minusminusEnabled: Bool = false
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -277,16 +279,36 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             swapEnabled = true
             flipEnabled = false
             copyEnabled = false
+            plusplusEnabled = false
+            minusminusEnabled = false
         case 1:
             controlInstructions.text = "To flip the first z Ints:\nHold your tap on the zth element."
             swapEnabled = false
             flipEnabled = true
             copyEnabled = false
+            plusplusEnabled = false
+            minusminusEnabled = false
         case 2:
             controlInstructions.text = "To copy a number:\nTap src element, then tap dst position."
             swapEnabled = false
             flipEnabled = false
             copyEnabled = true
+            plusplusEnabled = false
+            minusminusEnabled = false
+        case 3:
+            controlInstructions.text = "To increment a number:\nHold your tap on its element."
+            swapEnabled = false
+            flipEnabled = false
+            copyEnabled = false
+            plusplusEnabled = true
+            minusminusEnabled = false
+        case 4:
+            controlInstructions.text = "To decrement a number:\nHold your tap on its element"
+            swapEnabled = false
+            flipEnabled = false
+            copyEnabled = false
+            plusplusEnabled = false
+            minusminusEnabled = true
         default:
             break
         }
@@ -302,7 +324,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
                 if (!tempArrays.indices.contains(i)) {
                     //ith index does not exist
                     //initialize it
-                    tempArrays.append([0, 1, 2, 3, 4, 5, 6])
+                    tempArrays.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
                 }
             }
             shrinkBigButtons()
