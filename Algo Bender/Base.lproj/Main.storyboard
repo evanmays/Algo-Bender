@@ -199,7 +199,7 @@ May the sort be with you!</string>
                                 <rect key="frame" x="0.0" y="153" width="320" height="59"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="6SO-NA-rXy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tempArrayCell" id="6SO-NA-rXy" customClass="TempArrayTableViewCell" customModule="Algo_Bender" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6SO-NA-rXy" id="Bpl-kK-YMd">
@@ -271,8 +271,8 @@ May the sort be with you!</string>
                                                         </collectionViewCell>
                                                     </cells>
                                                     <connections>
-                                                        <outlet property="dataSource" destination="CO4-hd-7Bv" id="A7D-96-IAQ"/>
-                                                        <outlet property="delegate" destination="CO4-hd-7Bv" id="DqQ-1e-gmt"/>
+                                                        <outlet property="dataSource" destination="6SO-NA-rXy" id="Xgc-Ol-exW"/>
+                                                        <outlet property="delegate" destination="6SO-NA-rXy" id="Kuy-6M-kWe"/>
                                                     </connections>
                                                 </collectionView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Arr 0" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-ji-C0o">
@@ -292,8 +292,25 @@ May the sort be with you!</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="cellLabel" destination="e1r-ji-C0o" id="kiW-ic-Na2"/>
+                                            <outlet property="collectionView" destination="wIc-5u-mbY" id="qvm-Vc-qbd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="spacerCell" id="HTs-yG-V1Q">
+                                        <rect key="frame" x="0.0" y="110" width="320" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HTs-yG-V1Q" id="e6c-R1-Vyz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CO4-hd-7Bv" id="24H-hs-JSg"/>
+                                    <outlet property="delegate" destination="CO4-hd-7Bv" id="ipQ-C2-I47"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmi-XO-eR7">
                                 <rect key="frame" x="84" y="458" width="152" height="41"/>
@@ -345,7 +362,7 @@ Tap one element, then tap another element.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="brH-nD-UL1">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="brH-nD-UL1">
                                 <rect key="frame" x="202" y="76" width="94" height="29"/>
                                 <connections>
                                     <action selector="stepperValueChanged:" destination="CO4-hd-7Bv" eventType="valueChanged" id="BPl-Ct-gh7"/>
@@ -489,6 +506,7 @@ Tap one element, then tap another element.</string>
                         <outlet property="shuffleAndNewSortConstraint" destination="vea-oo-dA9" id="HPr-HA-mPi"/>
                         <outlet property="shuffleBtn" destination="bmi-XO-eR7" id="9Mm-nY-NLE"/>
                         <outlet property="shuffleConstraintTop" destination="MeE-Q1-wGA" id="yoz-C9-FUl"/>
+                        <outlet property="tableView" destination="Q7p-Zu-WC1" id="aLE-Tu-xbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KT5-gf-Qvu" userLabel="First Responder" sceneMemberID="firstResponder"/>

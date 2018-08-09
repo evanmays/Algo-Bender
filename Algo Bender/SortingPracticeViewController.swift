@@ -9,7 +9,32 @@
 import UIKit
 import WebKit
 
-class SortingPracticeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate {
+class SortingPracticeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var numTempArrays: Int! = 0
+    
+    var tempArrays: [[Int]] = []
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return numTempArrays + 1 //1 is for spacer cell
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (indexPath.item == numTempArrays) {
+            return tableView.dequeueReusableCell(withIdentifier: "spacerCell", for: indexPath)
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tempArrayCell", for: indexPath) as! TempArrayTableViewCell
+        cell.sortingPracticeView = self
+        cell.currTempArrNumber = indexPath.item
+        cell.items = tempArrays[indexPath.item]
+        cell.cellLabel.text = "Temp Arr " + String(indexPath.item)
+        cell.collectionView.reloadData()
+        
+        return cell
+    }
+    
     
     @IBOutlet var textView: UITextView!
     
@@ -18,6 +43,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     var items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     
     var selected: (Int?, Int?) = (nil, nil)
+    var selectedFromArr: (Int?, Int?) = (nil, nil) //0...n is temp arrays. -1 is main array
     
     var sorted = true
     
@@ -52,6 +78,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     deinit {
         collectionView = nil
         textView = nil
+        tableView = nil
     }
     
     override func viewDidLayoutSubviews() {
@@ -59,20 +86,20 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.items.count
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "address", for: indexPath) as! MyCollectionViewCell
         let i = indexPath.item
         cell.configure(value: self.items[i], position: i)
-        if (i != selected.0 && i != selected.1) {
+        if (!cellIsSelected(index: i)) {
             cell.unselected()
         }
         if (self.sorted) {
             cell.turnGreen()
         }
-        if (i == selected.0 || i == selected.1) {
+        if (cellIsSelected(index: i)) {
             cell.selected()
         }
         return cell
@@ -82,36 +109,83 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         if (swapEnabled) {
             if (selected == (nil, nil)) {
                 selected.0 = indexPath.item
+                selectedFromArr.0 = -1
                 collectionView.reloadData()
+                tableView.reloadData()
             }
             else {
                 //selected is (something, nil)
                 selected.1 = indexPath.item
+                selectedFromArr.1 = -1
                 swapSelected()
             }
         }
         else if (copyEnabled) {
             if (selected == (nil, nil)) {
                 selected.0 = indexPath.item
+                selectedFromArr.0 = -1
                 collectionView.reloadData()
+                tableView.reloadData()
             }
             else {
                 //selected is (something, nil)
                 selected.1 = indexPath.item
+                selectedFromArr.1 = -1
                 copySelected()
             }
         }
     }
     
     func swapSelected() {
-        let temp = items[selected.0!]
-        items[selected.0!] = items[selected.1!]
-        items[selected.1!] = temp
+        var firstVal = 0
+        var secondVal = 0
+        
+        //get firstval and secondval
+        if (selectedFromArr.0! == -1) {
+            firstVal = items[selected.0!]
+        }
+        else {
+            firstVal = tempArrays[selectedFromArr.0!][selected.0!]
+        }
+        if (selectedFromArr.1! == -1) {
+            secondVal = items[selected.1!]
+        }
+        else {
+            secondVal = tempArrays[selectedFromArr.1!][selected.1!]
+        }
+        
+        //swap them
+        if (selectedFromArr.0! == -1) {
+            items[selected.0!] = secondVal
+        }
+        else {
+            tempArrays[selectedFromArr.0!][selected.0!] = secondVal
+        }
+        if (selectedFromArr.1! == -1) {
+            items[selected.1!] = firstVal
+        }
+        else {
+            tempArrays[selectedFromArr.1!][selected.1!] = firstVal
+        }
+        
         reloadCollection()
     }
     
     func copySelected() {
-        items[selected.1!] = items[selected.0!]
+        var src = 0;
+        if (selectedFromArr.0! == -1) {
+            src = items[selected.0!]
+        }
+        else {
+            src = tempArrays[selectedFromArr.0!][selected.0!]
+        }
+        
+        if (selectedFromArr.1! == -1) {
+            items[selected.1!] = src
+        }
+        else {
+            tempArrays[selectedFromArr.1!][selected.1!] = src
+        }
         reloadCollection()
     }
     
@@ -128,7 +202,6 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         for i in 0...n {
             temp.insert(items[i], at: 0)
         }
-        print(temp)
         for i in 0...n {
             items[i] = temp[i]
         }
@@ -157,8 +230,10 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     func reloadCollection() {
         selected = (nil, nil)
+        selectedFromArr = (nil, nil)
         sorted = isSorted(arr: items)
         collectionView.reloadData()
+        tableView.reloadData()
     }
     
     
@@ -220,14 +295,24 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         numberOfTempArrays.text = Int(sender.value).description + " Temp Arrays"
-        if (Int(sender.value) > 0) {
+        numTempArrays = Int(sender.value)
+        if (numTempArrays > 0) {
             //shrink Shuffle Order and New Sorted Array buttons
+            for i in 0 ..< numTempArrays {
+                if (!tempArrays.indices.contains(i)) {
+                    //ith index does not exist
+                    //initialize it
+                    tempArrays.append([0, 1, 2, 3, 4, 5, 6])
+                }
+            }
             shrinkBigButtons()
         }
         else {
+            tempArrays = []
             //grow Shuffle Order and New Sorted Array buttons
             growSmallButtons()
         }
+        reloadCollection()
     }
     
     func shrinkBigButtons() {
@@ -259,5 +344,15 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
                 self.view.layoutIfNeeded()
             }
         })
+    }
+    
+    func cellIsSelected(index: Int) -> Bool {
+        if (index == selected.0 && selectedFromArr.0 == -1) {
+            return true
+        }
+        if (index == selected.1 && selectedFromArr.1 == -1) {
+            return true
+        }
+        return false
     }
 }

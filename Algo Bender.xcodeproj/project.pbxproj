@@ -10,6 +10,7 @@
 		760D4FC4210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */; };
 		760D4FC8210E695A00E6FD0D /* AlgorithmInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */; };
 		760D4FCA210E785100E6FD0D /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760D4FC9210E785100E6FD0D /* MyTableViewCell.swift */; };
+		7650E99C211BC0C10083CA86 /* TempArrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7650E99B211BC0C10083CA86 /* TempArrayTableViewCell.swift */; };
 		7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACA3210A5D810087AB37 /* AppDelegate.swift */; };
 		7694ACA9210A5D810087AB37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7694ACA7210A5D810087AB37 /* Main.storyboard */; };
 		7694ACAB210A5D830087AB37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7694ACAA210A5D830087AB37 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoHandbookTableViewController.swift; sourceTree = "<group>"; };
 		760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmInformation.swift; sourceTree = "<group>"; };
 		760D4FC9210E785100E6FD0D /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		7650E99B211BC0C10083CA86 /* TempArrayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempArrayTableViewCell.swift; sourceTree = "<group>"; };
 		7694ACA0210A5D810087AB37 /* Algo Bender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algo Bender.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7694ACA3210A5D810087AB37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7694ACA8210A5D810087AB37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				760D4FC7210E695A00E6FD0D /* AlgorithmInformation.swift */,
 				76D1F7A12118BD6800506F8E /* MainViewController.swift */,
 				76D8B060211B4AA200F390C8 /* SortingPracticeInstructions.xib */,
+				7650E99B211BC0C10083CA86 /* TempArrayTableViewCell.swift */,
 			);
 			path = "Algo Bender";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
 				76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */,
 				760D4FCA210E785100E6FD0D /* MyTableViewCell.swift in Sources */,
+				7650E99C211BC0C10083CA86 /* TempArrayTableViewCell.swift in Sources */,
 				7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */,
 				760D4FC4210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift in Sources */,
 				7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */,
