@@ -20,6 +20,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     var sorted = true
     
+    @IBOutlet var stepper: UIStepper!
     @IBOutlet var shuffleBtn: UIButton!
     @IBOutlet var newSortedArrayBtn: UIButton!
     @IBOutlet var shuffleAndNewSortConstraint: NSLayoutConstraint!
@@ -40,11 +41,13 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         let recognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(longPress(longPressGestureRecognizer:)))
         recognizer.delegate=self
         view.addGestureRecognizer(recognizer)
+        self.navigationItem.leftBarButtonItem?.isEnabled = false
     }
 
     deinit {
         collectionView = nil
         tableView = nil
+        stepper = nil
     }
     
     //Main Array's Collection View Functions
@@ -110,6 +113,7 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
         selected = nil
         selectedFromArr = nil
         sorted = practiceArrs.getArray(pos: -1).isSorted()
+        self.navigationItem.leftBarButtonItem?.isEnabled = practiceArrs.weShouldEnableUndo()
         collectionView.reloadData()
         tableView.reloadData()
     }
@@ -156,9 +160,14 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
-        numberOfTempArrays.text = Int(sender.value).description + " Temp Arrays"
-        practiceArrs.updateTempCount(Int(sender.value))
-        if (Int(sender.value) > 0) {
+        updateNumberOfTempArrs(num: Int(sender.value))
+        reloadCollection()
+    }
+    
+    func updateNumberOfTempArrs(num: Int) {
+        practiceArrs.updateTempCount(num)
+        numberOfTempArrays.text = num.description + " Temp Arrays"
+        if (num > 0) {
             //shrink Shuffle Order and New Sorted Array buttons
             shrinkBigButtons()
         }
@@ -166,11 +175,12 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             //grow Shuffle Order and New Sorted Array buttons
             growSmallButtons()
         }
-        reloadCollection()
     }
     
     @IBAction func undoBtnPressed(_ sender: UIBarButtonItem) {
         practiceArrs.undo()
+        updateNumberOfTempArrs(num: practiceArrs.numOfTemps())
+        stepper.value = Double(practiceArrs.numOfTemps())
         reloadCollection()
     }
 }

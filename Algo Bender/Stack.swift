@@ -21,4 +21,8 @@ struct Stack {
     func peek() -> ([Int], [[Int]])? {
         return array.last
     }
+    
+    func size() -> Int {
+        return array.count
+    }
 }

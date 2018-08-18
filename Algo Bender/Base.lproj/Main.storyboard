@@ -512,6 +512,7 @@ Tap one element, then tap another element.</string>
                         <outlet property="shuffleAndNewSortConstraint" destination="vea-oo-dA9" id="HPr-HA-mPi"/>
                         <outlet property="shuffleBtn" destination="bmi-XO-eR7" id="9Mm-nY-NLE"/>
                         <outlet property="shuffleConstraintTop" destination="MeE-Q1-wGA" id="yoz-C9-FUl"/>
+                        <outlet property="stepper" destination="brH-nD-UL1" id="Nyw-uR-CRT"/>
                         <outlet property="tableView" destination="Q7p-Zu-WC1" id="aLE-Tu-xbY"/>
                     </connections>
                 </viewController>
