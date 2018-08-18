@@ -126,8 +126,8 @@ struct PracticeArrays {
             for i in 0 ..< num {
                 if (!tempArrays.indices.contains(i)) {
                     //ith index does not exist
-                    //initialize it
-                    tempArrays.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+                    //initialize it as same size as items
+                    tempArrays.append(Array.init(repeating: 0, count: items.count))
                 }
             }
         }

@@ -196,7 +196,7 @@ May the sort be with you!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="82" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-Zu-WC1">
-                                <rect key="frame" x="0.0" y="153" width="320" height="59"/>
+                                <rect key="frame" x="0.0" y="116.5" width="320" height="95.5"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tempArrayCell" id="6SO-NA-rXy" customClass="TempArrayTableViewCell" customModule="Algo_Bender" customModuleProvider="target">
@@ -438,18 +438,6 @@ Tap one element, then tap another element.</string>
                                     <outlet property="delegate" destination="CO4-hd-7Bv" id="PeC-gV-e0A"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Array Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipH-im-Dko">
-                                <rect key="frame" x="24" y="116.5" width="124.5" height="20.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xv-Vr-P5w">
-                                <rect key="frame" x="271" y="112" width="25" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input array of size n" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8E3-qU-iSz">
                                 <rect key="frame" x="16" y="220" width="288" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
@@ -460,17 +448,13 @@ Tap one element, then tap another element.</string>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FzV-mu-I2C" firstAttribute="top" secondItem="8Uf-g9-vrf" secondAttribute="bottom" constant="16" id="0Wn-Jr-GOl"/>
-                            <constraint firstItem="4xv-Vr-P5w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ipH-im-Dko" secondAttribute="trailing" constant="10" id="0fW-zS-W6W"/>
+                            <constraint firstItem="Q7p-Zu-WC1" firstAttribute="top" secondItem="1oU-tm-mAL" secondAttribute="bottom" constant="16" id="1Dz-Cf-5LG"/>
                             <constraint firstItem="8Uf-g9-vrf" firstAttribute="leading" secondItem="Vdq-bs-8fm" secondAttribute="leading" constant="16" id="1HX-CG-TM4"/>
                             <constraint firstItem="1oU-tm-mAL" firstAttribute="top" secondItem="Vdq-bs-8fm" secondAttribute="top" constant="16" id="1Ll-yz-qEs"/>
-                            <constraint firstItem="Q7p-Zu-WC1" firstAttribute="top" secondItem="ipH-im-Dko" secondAttribute="bottom" constant="16" id="3Oc-mz-Pf3"/>
                             <constraint firstItem="Vdq-bs-8fm" firstAttribute="trailing" secondItem="brH-nD-UL1" secondAttribute="trailing" constant="24" id="9s8-Fa-1Pa"/>
                             <constraint firstItem="Vdq-bs-8fm" firstAttribute="trailing" secondItem="8Uf-g9-vrf" secondAttribute="trailing" constant="16" id="ASU-Hm-IbX"/>
-                            <constraint firstItem="ipH-im-Dko" firstAttribute="top" secondItem="1oU-tm-mAL" secondAttribute="bottom" constant="16" id="AiV-1h-DOR"/>
                             <constraint firstItem="8E3-qU-iSz" firstAttribute="leading" secondItem="Vdq-bs-8fm" secondAttribute="leading" constant="16" id="CAb-HA-etT"/>
                             <constraint firstItem="brH-nD-UL1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1oU-tm-mAL" secondAttribute="trailing" constant="10" id="F0d-Vq-tqr"/>
-                            <constraint firstItem="4xv-Vr-P5w" firstAttribute="trailing" secondItem="brH-nD-UL1" secondAttribute="trailing" id="KLR-66-xJQ"/>
-                            <constraint firstItem="ipH-im-Dko" firstAttribute="leading" secondItem="1oU-tm-mAL" secondAttribute="leading" id="Lmt-Ue-VdW"/>
                             <constraint firstItem="bmi-XO-eR7" firstAttribute="top" secondItem="OVF-a8-NaT" secondAttribute="bottom" constant="8" id="MeE-Q1-wGA"/>
                             <constraint firstItem="rRo-9p-2ee" firstAttribute="centerX" secondItem="Vdq-bs-8fm" secondAttribute="centerX" id="Mvr-wv-FKf"/>
                             <constraint firstItem="Vdq-bs-8fm" firstAttribute="trailing" secondItem="8E3-qU-iSz" secondAttribute="trailing" constant="16" id="OAi-qH-LT2"/>
@@ -486,7 +470,6 @@ Tap one element, then tap another element.</string>
                             <constraint firstItem="Vdq-bs-8fm" firstAttribute="bottom" secondItem="rRo-9p-2ee" secondAttribute="bottom" constant="20" id="ngP-Eg-MxJ"/>
                             <constraint firstItem="8E3-qU-iSz" firstAttribute="top" secondItem="Q7p-Zu-WC1" secondAttribute="bottom" constant="8" id="rev-aB-JUg"/>
                             <constraint firstItem="FzV-mu-I2C" firstAttribute="centerX" secondItem="Vdq-bs-8fm" secondAttribute="centerX" id="rlH-L6-HAK"/>
-                            <constraint firstItem="4xv-Vr-P5w" firstAttribute="centerY" secondItem="ipH-im-Dko" secondAttribute="centerY" id="uIe-Wd-eCA"/>
                             <constraint firstItem="rRo-9p-2ee" firstAttribute="top" secondItem="bmi-XO-eR7" secondAttribute="bottom" constant="8" id="vea-oo-dA9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vdq-bs-8fm"/>
