@@ -105,6 +105,9 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
     
     @IBAction func newNumbers(_ sender: UIButton) {
         practiceArrs.newNums()
+        updateNumberOfTempArrs(num: 0)
+        stepper.value = Double(practiceArrs.numOfTemps())
+        
         reloadCollection()
     }
     
