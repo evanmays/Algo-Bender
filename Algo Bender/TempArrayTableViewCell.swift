@@ -81,21 +81,19 @@ class TempArrayTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColle
             let touchPoint = longPressGestureRecognizer.location(in: collectionView)
             if let indexPath = collectionView.indexPathForItem(at: touchPoint) {
                 if (sortingPracticeView.action == "flipEnabled") {
-                    flipNumbers(n: indexPath.item)
+                    sortingPracticeView.practiceArrs.flipNums(arrNum: currTempArrNumber, n: indexPath.item)
+                    sortingPracticeView.reloadCollection()
+                }
+                else if (sortingPracticeView.action == "plusplusEnabled") {
+                    sortingPracticeView.practiceArrs.plusplusNumber(arrNum: currTempArrNumber, i: indexPath.item)
+                    sortingPracticeView.reloadCollection()
+                }
+                else if (sortingPracticeView.action == "minusminusEnabled") {
+                    sortingPracticeView.practiceArrs.minusminusNumber(arrNum: currTempArrNumber, i: indexPath.item)
+                    sortingPracticeView.reloadCollection()
                 }
             }
         }
-    }
-    
-    func flipNumbers(n: Int) {
-        var temp: [Int] = []
-        for i in 0...n {
-            temp.insert(items[i], at: 0)
-        }
-        for i in 0...n {
-            items[i] = temp[i]
-        }
-        collectionView.reloadData()
     }
     
     deinit {

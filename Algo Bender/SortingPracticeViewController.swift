@@ -124,7 +124,15 @@ class SortingPracticeViewController: UIViewController, UICollectionViewDataSourc
             let touchPoint = longPressGestureRecognizer.location(in: collectionView)
             if let indexPath = collectionView.indexPathForItem(at: touchPoint) {
                 if (action == "flipEnabled") {
-                    practiceArrs.flipNums(n: indexPath.item)
+                    practiceArrs.flipNums(arrNum: -1, n: indexPath.item)
+                    reloadCollection()
+                }
+                else if (action == "plusplusEnabled") {
+                    practiceArrs.plusplusNumber(arrNum: -1, i: indexPath.item)
+                    reloadCollection()
+                }
+                else if (action == "minusminusEnabled") {
+                    practiceArrs.minusminusNumber(arrNum: -1, i: indexPath.item)
                     reloadCollection()
                 }
             }
