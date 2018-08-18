@@ -492,7 +492,11 @@ Tap one element, then tap another element.</string>
                         <viewLayoutGuide key="safeArea" id="Vdq-bs-8fm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sorting Practice" id="zE1-7I-zMc">
-                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="7tj-2p-hJT"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="7tj-2p-hJT">
+                            <connections>
+                                <action selector="undoBtnPressed:" destination="CO4-hd-7Bv" id="ger-YM-pbM"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="TCf-1b-7It">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="custom" customClass="DismissSegue" customModule="Algo_Bender" customModuleProvider="target" id="jOM-zw-swJ"/>

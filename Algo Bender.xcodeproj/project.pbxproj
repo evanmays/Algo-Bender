@@ -18,6 +18,10 @@
 		7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */; };
 		7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */; };
 		7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */; };
+		7698D479212748DC0000210B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D478212748DC0000210B /* Stack.swift */; };
+		7698D47B212755F10000210B /* PracticeArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D47A212755F10000210B /* PracticeArrays.swift */; };
+		7698D47D2127AEA30000210B /* SortingPracticeViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D47C2127AEA30000210B /* SortingPracticeViewController+Animations.swift */; };
+		7698D47F2127AF500000210B /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D47E2127AF500000210B /* Array+Helpers.swift */; };
 		76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */; };
 		76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */; };
 		76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */; };
@@ -40,6 +44,10 @@
 		7694ACB5210A9D2F0087AB37 /* DismissSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
 		7694ACB7210B872B0087AB37 /* SortingPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingPracticeViewController.swift; sourceTree = "<group>"; };
 		7694ACBB210B926E0087AB37 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		7698D478212748DC0000210B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = "Algo Bender/Stack.swift"; sourceTree = "<group>"; };
+		7698D47A212755F10000210B /* PracticeArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PracticeArrays.swift; path = "Algo Bender/PracticeArrays.swift"; sourceTree = "<group>"; };
+		7698D47C2127AEA30000210B /* SortingPracticeViewController+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortingPracticeViewController+Animations.swift"; sourceTree = "<group>"; };
+		7698D47E2127AF500000210B /* Array+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
 		76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoTableViewCell.swift; sourceTree = "<group>"; };
 		76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDetailsTableViewController.swift; sourceTree = "<group>"; };
 		76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringAlgos.swift; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 		7694AC97210A5D810087AB37 = {
 			isa = PBXGroup;
 			children = (
+				7698D47A212755F10000210B /* PracticeArrays.swift */,
+				7698D478212748DC0000210B /* Stack.swift */,
 				7694ACA2210A5D810087AB37 /* Algo Bender */,
 				7694ACA1210A5D810087AB37 /* Products */,
 			);
@@ -104,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */,
+				7698D47C2127AEA30000210B /* SortingPracticeViewController+Animations.swift */,
+				7698D47E2127AF500000210B /* Array+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,10 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7694ACBC210B926E0087AB37 /* MyCollectionViewCell.swift in Sources */,
+				7698D47B212755F10000210B /* PracticeArrays.swift in Sources */,
+				7698D479212748DC0000210B /* Stack.swift in Sources */,
 				76F53F322118E4DF00A57DEB /* UIViewController+YouTube.swift in Sources */,
 				760D4FC8210E695A00E6FD0D /* AlgorithmInformation.swift in Sources */,
 				76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */,
 				76D1F7A22118BD6800506F8E /* MainViewController.swift in Sources */,
+				7698D47D2127AEA30000210B /* SortingPracticeViewController+Animations.swift in Sources */,
 				76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */,
 				7694ACB6210A9D2F0087AB37 /* DismissSegue.swift in Sources */,
 				76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */,
@@ -193,6 +208,7 @@
 				7650E99C211BC0C10083CA86 /* TempArrayTableViewCell.swift in Sources */,
 				7694ACB8210B872B0087AB37 /* SortingPracticeViewController.swift in Sources */,
 				760D4FC4210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift in Sources */,
+				7698D47F2127AF500000210B /* Array+Helpers.swift in Sources */,
 				7694ACA4210A5D810087AB37 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

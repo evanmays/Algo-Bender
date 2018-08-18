@@ -19,6 +19,13 @@ class TempArrayTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColle
         addGestureRecognizer(recognizer)
     }
     
+    func setup(index: Int) {
+        items = sortingPracticeView.practiceArrs.getArray(pos: index)
+        currTempArrNumber = index
+        cellLabel.text = "Temp Arr " + String(index)
+        collectionView.reloadData()
+    }
+    
     @IBOutlet var collectionView: UICollectionView!
     
     var currTempArrNumber: Int!
@@ -37,47 +44,34 @@ class TempArrayTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColle
         cell.configure(value: self.items[i], position: i)
         
         cell.unselected()
-        if (cellIsSelected(index: i)) {
+        if (i == sortingPracticeView.selected && sortingPracticeView.selectedFromArr == currTempArrNumber) {
             cell.selected()
         }
         return cell
     }
     
-    func cellIsSelected(index: Int) -> Bool {
-        if (index == sortingPracticeView.selected.0 && sortingPracticeView.selectedFromArr.0 == currTempArrNumber) {
-            return true
-        }
-        if (index == sortingPracticeView.selected.1 && sortingPracticeView.selectedFromArr.1 == currTempArrNumber) {
-            return true
-        }
-        return false
-    }
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (sortingPracticeView.swapEnabled) {
-            if (sortingPracticeView.selected == (nil, nil)) {
-                sortingPracticeView.selected.0 = indexPath.item
-                sortingPracticeView.selectedFromArr.0 = currTempArrNumber
+        if (sortingPracticeView.action == "swapEnabled") {
+            if (sortingPracticeView.selected == nil) {
+                sortingPracticeView.selected = indexPath.item
+                sortingPracticeView.selectedFromArr = currTempArrNumber
                 collectionView.reloadData()
             }
             else {
-                //selected is (something, nil)
-                sortingPracticeView.selected.1 = indexPath.item
-                sortingPracticeView.selectedFromArr.1 = currTempArrNumber
-                sortingPracticeView.swapSelected()
+                sortingPracticeView.practiceArrs.swapNums(firstArrNum: sortingPracticeView.selectedFromArr!, firstItem: sortingPracticeView.selected!, secondArrNum: currTempArrNumber, secondItem: indexPath.item)
+                sortingPracticeView.reloadCollection()
             }
         }
-        else if (sortingPracticeView.copyEnabled) {
+        else if (sortingPracticeView.action == "copyEnabled") {
             
-            if (sortingPracticeView.selected == (nil, nil)) {
-                sortingPracticeView.selected.0 = indexPath.item
-                sortingPracticeView.selectedFromArr.0 = currTempArrNumber
+            if (sortingPracticeView.selected == nil) {
+                sortingPracticeView.selected = indexPath.item
+                sortingPracticeView.selectedFromArr = currTempArrNumber
                 collectionView.reloadData()
             }
             else {
-                sortingPracticeView.selected.1 = indexPath.item
-            sortingPracticeView.selectedFromArr.1 = currTempArrNumber
-                sortingPracticeView.copySelected()
+                sortingPracticeView.practiceArrs.copyNums(firstArrNum: sortingPracticeView.selectedFromArr!, firstItem: sortingPracticeView.selected!, secondArrNum: currTempArrNumber, secondItem: indexPath.item)
+                sortingPracticeView.reloadCollection()
             }
         }
     }
@@ -86,7 +80,7 @@ class TempArrayTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColle
         if longPressGestureRecognizer.state == .began {
             let touchPoint = longPressGestureRecognizer.location(in: collectionView)
             if let indexPath = collectionView.indexPathForItem(at: touchPoint) {
-                if (sortingPracticeView.flipEnabled) {
+                if (sortingPracticeView.action == "flipEnabled") {
                     flipNumbers(n: indexPath.item)
                 }
             }
@@ -107,16 +101,6 @@ class TempArrayTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColle
     deinit {
         collectionView = nil
         cellLabel = nil
-    }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
