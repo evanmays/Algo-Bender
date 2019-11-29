@@ -24,11 +24,22 @@
 		7698D47F2127AF500000210B /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698D47E2127AF500000210B /* Array+Helpers.swift */; };
 		76A0C1D02112456C005F8279 /* MyVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */; };
 		76A8F3FC210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */; };
+		76CE89F42391D4EC004D4DF5 /* Algo_Bender_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE89F32391D4EC004D4DF5 /* Algo_Bender_Unit_Tests.swift */; };
 		76D1F79D2117EB5B00506F8E /* MeasuringAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */; };
 		76D1F7A22118BD6800506F8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D1F7A12118BD6800506F8E /* MainViewController.swift */; };
 		76D8B061211B4AA200F390C8 /* SortingPracticeInstructions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D8B060211B4AA200F390C8 /* SortingPracticeInstructions.xib */; };
 		76F53F322118E4DF00A57DEB /* UIViewController+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F53F312118E4DF00A57DEB /* UIViewController+YouTube.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76CE89F62391D4EC004D4DF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7694AC98210A5D810087AB37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7694AC9F210A5D810087AB37;
+			remoteInfo = "Algo Bender";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		760D4FC3210E57BE00E6FD0D /* AlgoHandbookTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoHandbookTableViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +61,9 @@
 		7698D47E2127AF500000210B /* Array+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
 		76A0C1CF2112456C005F8279 /* MyVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoTableViewCell.swift; sourceTree = "<group>"; };
 		76A8F3FB210E48F900C1A40B /* AlgorithmDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmDetailsTableViewController.swift; sourceTree = "<group>"; };
+		76CE89F12391D4EC004D4DF5 /* Algo Bender Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algo Bender Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CE89F32391D4EC004D4DF5 /* Algo_Bender_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Algo_Bender_Unit_Tests.swift; sourceTree = "<group>"; };
+		76CE89F52391D4EC004D4DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76D1F79C2117EB5B00506F8E /* MeasuringAlgos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuringAlgos.swift; sourceTree = "<group>"; };
 		76D1F7A12118BD6800506F8E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		76D8B060211B4AA200F390C8 /* SortingPracticeInstructions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortingPracticeInstructions.xib; sourceTree = "<group>"; };
@@ -58,6 +72,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		7694AC9D210A5D810087AB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE89EE2391D4EC004D4DF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +94,7 @@
 				7698D47A212755F10000210B /* PracticeArrays.swift */,
 				7698D478212748DC0000210B /* Stack.swift */,
 				7694ACA2210A5D810087AB37 /* Algo Bender */,
+				76CE89F22391D4EC004D4DF5 /* Algo Bender Unit Tests */,
 				7694ACA1210A5D810087AB37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7694ACA0210A5D810087AB37 /* Algo Bender.app */,
+				76CE89F12391D4EC004D4DF5 /* Algo Bender Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +131,15 @@
 				7650E99B211BC0C10083CA86 /* TempArrayTableViewCell.swift */,
 			);
 			path = "Algo Bender";
+			sourceTree = "<group>";
+		};
+		76CE89F22391D4EC004D4DF5 /* Algo Bender Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				76CE89F32391D4EC004D4DF5 /* Algo_Bender_Unit_Tests.swift */,
+				76CE89F52391D4EC004D4DF5 /* Info.plist */,
+			);
+			path = "Algo Bender Unit Tests";
 			sourceTree = "<group>";
 		};
 		76F53F342118E51200A57DEB /* Extensions */ = {
@@ -140,19 +172,41 @@
 			productReference = 7694ACA0210A5D810087AB37 /* Algo Bender.app */;
 			productType = "com.apple.product-type.application";
 		};
+		76CE89F02391D4EC004D4DF5 /* Algo Bender Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76CE89FA2391D4EC004D4DF5 /* Build configuration list for PBXNativeTarget "Algo Bender Unit Tests" */;
+			buildPhases = (
+				76CE89ED2391D4EC004D4DF5 /* Sources */,
+				76CE89EE2391D4EC004D4DF5 /* Frameworks */,
+				76CE89EF2391D4EC004D4DF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CE89F72391D4EC004D4DF5 /* PBXTargetDependency */,
+			);
+			name = "Algo Bender Unit Tests";
+			productName = "Algo Bender Unit Tests";
+			productReference = 76CE89F12391D4EC004D4DF5 /* Algo Bender Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7694AC98210A5D810087AB37 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Evan Mays";
 				TargetAttributes = {
 					7694AC9F210A5D810087AB37 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
+					};
+					76CE89F02391D4EC004D4DF5 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7694AC9F210A5D810087AB37;
 					};
 				};
 			};
@@ -170,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				7694AC9F210A5D810087AB37 /* Algo Bender */,
+				76CE89F02391D4EC004D4DF5 /* Algo Bender Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +238,13 @@
 				7694ACAB210A5D830087AB37 /* Assets.xcassets in Resources */,
 				76D8B061211B4AA200F390C8 /* SortingPracticeInstructions.xib in Resources */,
 				7694ACA9210A5D810087AB37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76CE89EF2391D4EC004D4DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +275,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76CE89ED2391D4EC004D4DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76CE89F42391D4EC004D4DF5 /* Algo_Bender_Unit_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76CE89F72391D4EC004D4DF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7694AC9F210A5D810087AB37 /* Algo Bender */;
+			targetProxy = 76CE89F62391D4EC004D4DF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7694ACA7210A5D810087AB37 /* Main.storyboard */ = {
@@ -387,6 +465,49 @@
 			};
 			name = Release;
 		};
+		76CE89F82391D4EC004D4DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Algo Bender Unit Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanmays.Algo-Bender-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algo Bender.app/Algo Bender";
+			};
+			name = Debug;
+		};
+		76CE89F92391D4EC004D4DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Algo Bender Unit Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanmays.Algo-Bender-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algo Bender.app/Algo Bender";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +525,15 @@
 			buildConfigurations = (
 				7694ACB3210A5D830087AB37 /* Debug */,
 				7694ACB4210A5D830087AB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76CE89FA2391D4EC004D4DF5 /* Build configuration list for PBXNativeTarget "Algo Bender Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76CE89F82391D4EC004D4DF5 /* Debug */,
+				76CE89F92391D4EC004D4DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
